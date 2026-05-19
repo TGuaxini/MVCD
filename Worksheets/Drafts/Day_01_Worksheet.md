@@ -1,4 +1,4 @@
-# Worksheet - Day XX: Title
+# Worksheet - Day 01: Infrastructure and Project Setup
 
 ## Objective
 Prepare the thesis production workflow before Unreal Engine implementation begins.

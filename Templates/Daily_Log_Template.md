@@ -1,15 +1,15 @@
-# Day XX - Title
+# Day {{DAY_NUMBER}} - {{TITLE}}
 
 ## Status
 - State: Draft
-- Date:
+- Date: {{DATE}}
 - Hours Worked:
 - Main Focus:
 
 ## Planned Tasks
-- [ ] Task 1
-- [ ] Task 2
-- [ ] Task 3
+- [ ] 
+- [ ] 
+- [ ] 
 
 ## Work Completed
 - [ ] 
@@ -18,10 +18,10 @@
 Write implementation notes here.
 
 ## Problems Encountered
-Write issues, bugs, confusion, or blockers here.
+Write issues, blockers, bugs, or confusion here.
 
 ## Solutions / Decisions
-Document what you changed and why.
+Document what was changed and why.
 
 ## Evidence Captured
 - Screenshot:
@@ -30,8 +30,8 @@ Document what you changed and why.
 - Commit:
 
 ## Dissertation Notes
-Explain how today supports the thesis/framework.
+Explain how today's work supports the framework/dissertation.
 
 ## Tomorrow
-- [ ] Next action 1
-- [ ] Next action 2
+- [ ] 
+- [ ] 
