@@ -11,17 +11,28 @@
             "id": "ffd0560a781f2b3e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "docs/worksheets/Day_01_Worksheet.md",
-                "mode": "source",
-                "source": false
+                "file": "Screenshots/Day_01/Captura de ecrã 2026-05-19 140852.png"
               },
-              "icon": "lucide-file",
-              "title": "Day_01_Worksheet"
+              "icon": "lucide-image",
+              "title": "Captura de ecrã 2026-05-19 140852"
+            }
+          },
+          {
+            "id": "4e52b833769bc070",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "docs/assets/Day_01/Captura de ecrã 2026-05-19 140935 1.png"
+              },
+              "icon": "lucide-image",
+              "title": "Captura de ecrã 2026-05-19 140935 1"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "d4aaee8089a52b6b",
@@ -114,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/worksheets/Day_01_Worksheet.md",
+                "file": "docs/assets/Day_01/Captura de ecrã 2026-05-19 140935 1.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +135,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Day_01_Worksheet"
+              "title": "Backlinks for Captura de ecrã 2026-05-19 140935 1"
             }
           },
           {
@@ -133,12 +144,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/worksheets/Day_01_Worksheet.md",
+                "file": "docs/assets/Day_01/Captura de ecrã 2026-05-19 140935 1.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Day_01_Worksheet"
+              "title": "Outgoing links from Captura de ecrã 2026-05-19 140935 1"
             }
           },
           {
@@ -176,13 +187,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/worksheets/Day_01_Worksheet.md",
+                "file": "docs/assets/Day_01/Captura de ecrã 2026-05-19 140935 1.png",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Day_01_Worksheet"
+              "title": "Outline of Captura de ecrã 2026-05-19 140935 1"
             }
           }
         ]
@@ -203,14 +214,21 @@
       "bases:Create new base": false
     }
   },
-  "active": "8690d374ea48cece",
+  "active": "4e52b833769bc070",
   "lastOpenFiles": [
+    "Screenshots/Day_01/Captura de ecrã 2026-05-19 140935.png",
+    "docs/assets/Day_01/Captura de ecrã 2026-05-19 140935 1.png",
+    "docs/assets/Day_01/Captura de ecrã 2026-05-19 140927 1.png",
+    "Screenshots/Day_01/Captura de ecrã 2026-05-19 140927.png",
+    "docs/assets/Day_01/Captura de ecrã 2026-05-19 140852 1.png",
+    "Screenshots/Day_01/Captura de ecrã 2026-05-19 140852.png",
+    "docs/assets/Day_01",
+    "Worksheets/Drafts/Day_01_Worksheet.md",
+    "docs/worksheets/Day_01_Worksheet.md",
     "docs/worksheets/README.md",
     "docs/data/progress.example.json",
     "docs/viewer.js",
     "docs/viewer.html",
-    "Worksheets/Drafts/Day_01_Worksheet.md",
-    "docs/worksheets/Day_01_Worksheet.md",
     "docs_PUBLISHING_GUIDE.md",
     "data/progress.json",
     "data",
@@ -221,12 +239,8 @@
     "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Cache/Cache_Data/data_1",
     "Unreal/MVCD_Unreal/Saved/webcache_6613/b7db9d81-77b4-4951-935e-de3affe2c21e.tmp",
     "Unreal/MVCD_Unreal/Saved/AutoScreenshot.png",
-    "Unreal/MVCD_Unreal/Saved/Autosaves/PackageRestoreData.json",
-    "Screenshots/Day_01/Captura de ecrã 2026-05-19 140852.png",
     "Screenshots/Screenshots.md",
     "Screenshots/Day_01.png",
-    "Screenshots/Day_01/Captura de ecrã 2026-05-19 140935.png",
-    "Screenshots/Day_01/Captura de ecrã 2026-05-19 140927.png",
     "Daily Logs/Daily Logs.md",
     "Site/Saber Thesis Dashboard.md",
     "Benchmarks/Benchmark_Template.md",

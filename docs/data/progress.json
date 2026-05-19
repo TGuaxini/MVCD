@@ -10,7 +10,7 @@
       "summary": "Configured the thesis production pipeline, GitHub Pages dashboard, and Obsidian documentation workflow.",
       "log": "./viewer.html?file=logs/Day_01_Draft.md&type=Daily%20Log",
       "worksheet": "./viewer.html?file=worksheets/Day_01_Worksheet.md&type=Worksheet",
-      "evidence": "./assets/screenshots/day_01/"
+      "evidence": "./assets/screenshots/Day_01/"
     }
   ]
 }

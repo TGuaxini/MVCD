@@ -60,7 +60,9 @@ function renderMarkdown(md) {
         inList = true;
       }
       const checked = line.includes("[x]") || line.includes("[X]");
-      const content = line.replace(/^- \[[ xX]\]\s*/, "");
+      const content = line
+      .replace(/^- \[[ xX]\]\s*/, "")
+      .replace(/^\s*- \[[ xX]\]\s*/, "");
       html += `<li class="${checked ? "done" : ""}"><span class="check">${checked ? "✓" : ""}</span>${inlineMarkdown(content)}</li>`;
     } else if (line.trim().startsWith("- ")) {
       if (!inList) {
