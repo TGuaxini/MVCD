@@ -8,33 +8,71 @@
 </head>
 <body>
   <header class="hero">
-    <div>
+    <nav class="topbar">
+      <span class="brand">MVCD</span>
+      <a href="#logs">Daily Logs</a>
+      <a href="#worksheets">Worksheets</a>
+      <a href="#architecture">Architecture</a>
+      <a href="#benchmarks">Benchmarks</a>
+    </nav>
+
+    <section class="hero-content">
       <p class="eyebrow">UE5 C++ Destruction Framework</p>
       <h1>Monster Versus City Destruction</h1>
-      <p class="subtitle">Daily production evidence, worksheets, architecture notes, and benchmark tracking.</p>
-    </div>
+      <p class="subtitle">A public thesis production dashboard for tracking implementation progress, documentation evidence, and framework development.</p>
+    </section>
   </header>
 
-  <main class="layout">
-    <section class="card">
-      <h2>Project Status</h2>
-      <p id="statusText">Loading project status...</p>
+  <main class="container">
+    <section class="stats-grid">
+      <article class="stat-card">
+        <span class="stat-label">Project Status</span>
+        <strong id="projectStatus">Loading...</strong>
+      </article>
+      <article class="stat-card">
+        <span class="stat-label">Completed Days</span>
+        <strong id="completedCount">0</strong>
+      </article>
+      <article class="stat-card">
+        <span class="stat-label">Total Hours</span>
+        <strong id="totalHours">0h</strong>
+      </article>
     </section>
 
-    <section class="card">
-      <h2>Completed Daily Logs</h2>
-      <div id="dailyLogs" class="grid"></div>
+    <section id="logs" class="panel">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Progress</p>
+          <h2>Completed Daily Entries</h2>
+        </div>
+        <div class="controls">
+          <input id="searchInput" type="search" placeholder="Search entries..." />
+          <select id="sortSelect">
+            <option value="newest">Newest first</option>
+            <option value="oldest">Oldest first</option>
+            <option value="dayAsc">Day number ↑</option>
+            <option value="dayDesc">Day number ↓</option>
+            <option value="hoursDesc">Hours worked ↓</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="dailyLogs" class="log-grid"></div>
     </section>
 
-    <section class="card">
-      <h2>Workflow</h2>
-      <ol>
-        <li>Use the worksheet during development.</li>
-        <li>Write the daily log in Obsidian under <code>Daily Logs/Drafts</code>.</li>
-        <li>Move finished logs to <code>Daily Logs/Completed</code>.</li>
-        <li>Add an entry to <code>docs/data/progress.json</code>.</li>
-        <li>Commit and push to GitHub.</li>
-      </ol>
+    <section id="worksheets" class="panel compact">
+      <h2>Worksheets</h2>
+      <p>Worksheet links will appear inside each completed daily entry after they are published.</p>
+    </section>
+
+    <section id="architecture" class="panel compact">
+      <h2>Architecture</h2>
+      <p>Architecture diagrams and framework notes will be added as the technical systems are implemented.</p>
+    </section>
+
+    <section id="benchmarks" class="panel compact">
+      <h2>Benchmarks</h2>
+      <p>Performance and multiplayer synchronization benchmarks will be published after testing begins.</p>
     </section>
   </main>
 
