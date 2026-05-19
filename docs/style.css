@@ -1,7 +1,97 @@
+:root {
+  color-scheme: dark;
+  --bg: #0f172a;
+  --panel: #111827;
+  --panel-2: #1f2937;
+  --text: #f8fafc;
+  --muted: #cbd5e1;
+  --line: #334155;
+}
+
+* { box-sizing: border-box; }
+
 body {
-    background-color: #111827;
-    color: #f3f4f6;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  background: radial-gradient(circle at top, #1e293b, var(--bg));
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero {
+  padding: 48px 32px;
+  border-bottom: 1px solid var(--line);
+  background: rgba(15, 23, 42, 0.78);
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #93c5fd;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 4rem);
+}
+
+.subtitle {
+  max-width: 760px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.layout {
+  width: min(1100px, calc(100% - 32px));
+  margin: 32px auto;
+  display: grid;
+  gap: 20px;
+}
+
+.card {
+  background: rgba(17, 24, 39, 0.88);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.24);
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+}
+
+.day-card {
+  background: var(--panel-2);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 18px;
+}
+
+.day-card h3 {
+  margin: 0 0 8px;
+}
+
+.day-card p {
+  margin: 6px 0;
+  color: var(--muted);
+}
+
+a {
+  color: #93c5fd;
+}
+
+code {
+  background: #020617;
+  border: 1px solid var(--line);
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+.empty {
+  color: var(--muted);
+  border: 1px dashed var(--line);
+  border-radius: 14px;
+  padding: 18px;
 }
