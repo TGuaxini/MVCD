@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/logs/Day_01_Draft.md",
+                "file": "docs_PUBLISHING_GUIDE.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day_01_Draft"
+              "title": "docs_PUBLISHING_GUIDE"
             }
           }
         ]
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/logs/Day_01_Draft.md",
+                "file": "docs_PUBLISHING_GUIDE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +124,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Day_01_Draft"
+              "title": "Backlinks for docs_PUBLISHING_GUIDE"
             }
           },
           {
@@ -133,12 +133,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/logs/Day_01_Draft.md",
+                "file": "docs_PUBLISHING_GUIDE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Day_01_Draft"
+              "title": "Outgoing links from docs_PUBLISHING_GUIDE"
             }
           },
           {
@@ -176,13 +176,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/logs/Day_01_Draft.md",
+                "file": "docs_PUBLISHING_GUIDE.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Day_01_Draft"
+              "title": "Outline of docs_PUBLISHING_GUIDE"
             }
           }
         ]
@@ -203,10 +203,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "8690d374ea48cece",
+  "active": "ffd0560a781f2b3e",
   "lastOpenFiles": [
-    "Daily Logs/Completed/Day_01_Draft.md",
     "docs/logs/Day_01_Draft.md",
+    "Daily Logs/Completed/Day_01_Draft.md",
     "docs_PUBLISHING_GUIDE.md",
     "Worksheets/Drafts/Day_01_Worksheet.md",
     "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettingsE20302B14F973F3C48E3B8BF66CF518D.tmp",
