@@ -1,4 +1,3 @@
-# Saber Thesis Dashboard
 
 Static GitHub Pages dashboard for tracking the Monster Versus City Destruction thesis framework.
 
