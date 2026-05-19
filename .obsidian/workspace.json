@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Worksheets/Drafts/Day_01_Worksheet.md",
+                "file": "docs/logs/Day_01_Draft.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day_01_Worksheet"
+              "title": "Day_01_Draft"
             }
           }
         ]
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Worksheets/Drafts/Day_01_Worksheet.md",
+                "file": "docs/logs/Day_01_Draft.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +124,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Day_01_Worksheet"
+              "title": "Backlinks for Day_01_Draft"
             }
           },
           {
@@ -133,12 +133,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Worksheets/Drafts/Day_01_Worksheet.md",
+                "file": "docs/logs/Day_01_Draft.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Day_01_Worksheet"
+              "title": "Outgoing links from Day_01_Draft"
             }
           },
           {
@@ -176,13 +176,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Worksheets/Drafts/Day_01_Worksheet.md",
+                "file": "docs/logs/Day_01_Draft.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Day_01_Worksheet"
+              "title": "Outline of Day_01_Draft"
             }
           }
         ]
@@ -203,8 +203,12 @@
       "bases:Create new base": false
     }
   },
-  "active": "ffd0560a781f2b3e",
+  "active": "8690d374ea48cece",
   "lastOpenFiles": [
+    "Daily Logs/Completed/Day_01_Draft.md",
+    "docs/logs/Day_01_Draft.md",
+    "docs_PUBLISHING_GUIDE.md",
+    "Worksheets/Drafts/Day_01_Worksheet.md",
     "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettingsE20302B14F973F3C48E3B8BF66CF518D.tmp",
     "Unreal/MVCD_Unreal/Saved/Config/WindowsEditor/Editor.ini",
     "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Cache/Cache_Data/data_1",
@@ -216,15 +220,11 @@
     "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/45a13509-812e-43d6-9503-62fa494a4302.tmp",
     "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Extension Scripts/MANIFEST-000001",
     "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Extension Scripts/LOG",
-    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Extension Scripts/CURRENT",
-    "Daily Logs/Completed/Day_01_Draft.md",
-    "Worksheets/Drafts/Day_01_Worksheet.md",
     "Screenshots/Day_01/Captura de ecrã 2026-05-19 140852.png",
     "Screenshots/Screenshots.md",
     "Screenshots/Day_01.png",
     "Screenshots/Day_01/Captura de ecrã 2026-05-19 140935.png",
     "Screenshots/Day_01/Captura de ecrã 2026-05-19 140927.png",
-    "docs_PUBLISHING_GUIDE.md",
     "Daily Logs/Daily Logs.md",
     "Site/Saber Thesis Dashboard.md",
     "Benchmarks/Benchmark_Template.md",
