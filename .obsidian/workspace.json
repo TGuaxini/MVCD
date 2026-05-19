@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Assets/Assets.md",
+                "file": "Site/Site.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Assets"
+              "title": "Site"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Assets/Assets.md",
+                "file": "Site/Site.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Assets"
+              "title": "Backlinks for Site"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Assets/Assets.md",
+                "file": "Site/Site.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Assets"
+              "title": "Outgoing links from Site"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Assets/Assets.md",
+                "file": "Site/Site.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Assets"
+              "title": "Outline of Site"
             }
           }
         ]
@@ -185,6 +185,12 @@
   },
   "active": "8690d374ea48cece",
   "lastOpenFiles": [
+    "Site/style.css",
+    "Site/README_INSTALL.txt",
+    "Site/main.js",
+    "Site/js",
+    "Site/css",
+    "Assets/Assets.md",
     "Site/README.md",
     "Site/index.html",
     "Site/worksheets",
@@ -192,10 +198,7 @@
     "Site/data/daily-plan.json",
     "Site/data",
     "Site/assets/styles.css",
-    "Site/assets/app.js",
-    "Site/assets",
     "Site/Site.md",
-    "Assets/Assets.md",
     "Thesis Notes/Thesis Notes.md",
     "Benchmarks/Benchmarks.md",
     "Screenshots/Screenshots.md",
@@ -203,8 +206,6 @@
     "Research/Research.md",
     "Daily Logs/Daily Logs.md",
     "Worksheets/Worksheets.md",
-    "Monster Versus City Destruction (MVCD).md",
-    "Assets",
-    "Site"
+    "Monster Versus City Destruction (MVCD).md"
   ]
 }
