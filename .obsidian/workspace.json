@@ -23,12 +23,14 @@
             "id": "4e52b833769bc070",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "docs/assets/screenshots/Day_01/Captura de ecrã 2026-05-19 140935 1.png"
+                "file": "Architecture/Website Improvements Roadmap.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Captura de ecrã 2026-05-19 140935 1"
+              "icon": "lucide-file",
+              "title": "Website Improvements Roadmap"
             }
           }
         ],
@@ -125,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/assets/screenshots/Day_01/Captura de ecrã 2026-05-19 140935 1.png",
+                "file": "Architecture/Website Improvements Roadmap.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +137,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Captura de ecrã 2026-05-19 140935 1"
+              "title": "Backlinks for Website Improvements Roadmap"
             }
           },
           {
@@ -144,12 +146,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/assets/screenshots/Day_01/Captura de ecrã 2026-05-19 140935 1.png",
+                "file": "Architecture/Website Improvements Roadmap.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Captura de ecrã 2026-05-19 140935 1"
+              "title": "Outgoing links from Website Improvements Roadmap"
             }
           },
           {
@@ -187,13 +189,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/assets/screenshots/Day_01/Captura de ecrã 2026-05-19 140935 1.png",
+                "file": "Architecture/Website Improvements Roadmap.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Captura de ecrã 2026-05-19 140935 1"
+              "title": "Outline of Website Improvements Roadmap"
             }
           }
         ]
@@ -214,11 +216,15 @@
       "bases:Create new base": false
     }
   },
-  "active": "8690d374ea48cece",
+  "active": "4e52b833769bc070",
   "lastOpenFiles": [
+    "docs/assets/screenshots/Day_01/index.html",
+    "Architecture/MVCD_Framework_Architecture_Initial.md",
+    "Architecture/Website Improvements Roadmap.md",
+    "Architecture/Architecture.md",
+    "docs/assets/screenshots/Day_01/Captura de ecrã 2026-05-19 140935 1.png",
     "docs/assets/screenshots",
     "Screenshots/Day_01/Captura de ecrã 2026-05-19 140935.png",
-    "docs/assets/screenshots/Day_01/Captura de ecrã 2026-05-19 140935 1.png",
     "docs/assets/screenshots/Day_01/Captura de ecrã 2026-05-19 140927 1.png",
     "Screenshots/Day_01/Captura de ecrã 2026-05-19 140927.png",
     "docs/assets/screenshots/Day_01/Captura de ecrã 2026-05-19 140852 1.png",
@@ -238,14 +244,12 @@
     "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettingsE20302B14F973F3C48E3B8BF66CF518D.tmp",
     "Unreal/MVCD_Unreal/Saved/Config/WindowsEditor/Editor.ini",
     "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Cache/Cache_Data/data_1",
-    "Unreal/MVCD_Unreal/Saved/webcache_6613/b7db9d81-77b4-4951-935e-de3affe2c21e.tmp",
     "Unreal/MVCD_Unreal/Saved/AutoScreenshot.png",
     "Screenshots/Screenshots.md",
     "Screenshots/Day_01.png",
     "Daily Logs/Daily Logs.md",
     "Site/Saber Thesis Dashboard.md",
     "Benchmarks/Benchmark_Template.md",
-    "Architecture/MVCD_Framework_Architecture_Initial.md",
     "Templates/Worksheet_Template.md",
     "Templates/Daily_Log_Template.md",
     "Templates/Benchmark_Template.md",
@@ -255,7 +259,6 @@
     "docs/Site.md",
     "Thesis Notes/Thesis Notes.md",
     "Benchmarks/Benchmarks.md",
-    "Architecture/Architecture.md",
     "Research/Research.md",
     "Worksheets/Worksheets.md",
     "Monster Versus City Destruction (MVCD).md"
