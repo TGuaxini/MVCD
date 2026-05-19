@@ -183,8 +183,17 @@
       "bases:Create new base": false
     }
   },
-  "active": "ffd0560a781f2b3e",
+  "active": "8690d374ea48cece",
   "lastOpenFiles": [
+    "Site/README.md",
+    "Site/index.html",
+    "Site/worksheets",
+    "Site/logs",
+    "Site/data/daily-plan.json",
+    "Site/data",
+    "Site/assets/styles.css",
+    "Site/assets/app.js",
+    "Site/assets",
     "Site/Site.md",
     "Assets/Assets.md",
     "Thesis Notes/Thesis Notes.md",
@@ -196,13 +205,6 @@
     "Worksheets/Worksheets.md",
     "Monster Versus City Destruction (MVCD).md",
     "Assets",
-    "Site",
-    "Thesis Notes",
-    "Benchmarks",
-    "Screenshots",
-    "Architecture",
-    "Research",
-    "Worksheets",
-    "Daily Logs"
+    "Site"
   ]
 }

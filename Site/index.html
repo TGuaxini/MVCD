@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Saber Thesis Dashboard</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header>
+    <p class="eyebrow">Monster Versus City Destruction</p>
+    <h1>UE5 Destruction Framework Thesis Dashboard</h1>
+    <p class="subtitle">Daily worksheets, progress checks, evidence logs, and GitHub documentation for a mechanics-first destruction framework.</p>
+  </header>
+  <main>
+    <section class="summary-grid">
+      <article><span id="total-days">0</span><p>Total Days</p></article>
+      <article><span id="done-days">0</span><p>Completed</p></article>
+      <article><span id="hours">0</span><p>Planned Hours</p></article>
+      <article><span id="progress">0%</span><p>Progress</p></article>
+    </section>
+
+    <section class="controls">
+      <label>Filter by phase <select id="phase-filter"><option value="all">All</option></select></label>
+      <label>Filter by status <select id="status-filter"><option value="all">All</option><option>Not Started</option><option>In Progress</option><option>Blocked</option><option>Done</option></select></label>
+    </section>
+
+    <section id="day-list" class="day-list"></section>
+  </main>
+  <script src="assets/app.js"></script>
+</body>
+</html>
