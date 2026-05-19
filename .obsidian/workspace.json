@@ -25,7 +25,7 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "docs/assets/Day_01/Captura de ecrã 2026-05-19 140935 1.png"
+                "file": "docs/assets/screenshots/Day_01/Captura de ecrã 2026-05-19 140935 1.png"
               },
               "icon": "lucide-image",
               "title": "Captura de ecrã 2026-05-19 140935 1"
@@ -125,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/assets/Day_01/Captura de ecrã 2026-05-19 140935 1.png",
+                "file": "docs/assets/screenshots/Day_01/Captura de ecrã 2026-05-19 140935 1.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/assets/Day_01/Captura de ecrã 2026-05-19 140935 1.png",
+                "file": "docs/assets/screenshots/Day_01/Captura de ecrã 2026-05-19 140935 1.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -187,7 +187,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/assets/Day_01/Captura de ecrã 2026-05-19 140935 1.png",
+                "file": "docs/assets/screenshots/Day_01/Captura de ecrã 2026-05-19 140935 1.png",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -214,15 +214,16 @@
       "bases:Create new base": false
     }
   },
-  "active": "4e52b833769bc070",
+  "active": "8690d374ea48cece",
   "lastOpenFiles": [
+    "docs/assets/screenshots",
     "Screenshots/Day_01/Captura de ecrã 2026-05-19 140935.png",
-    "docs/assets/Day_01/Captura de ecrã 2026-05-19 140935 1.png",
-    "docs/assets/Day_01/Captura de ecrã 2026-05-19 140927 1.png",
+    "docs/assets/screenshots/Day_01/Captura de ecrã 2026-05-19 140935 1.png",
+    "docs/assets/screenshots/Day_01/Captura de ecrã 2026-05-19 140927 1.png",
     "Screenshots/Day_01/Captura de ecrã 2026-05-19 140927.png",
-    "docs/assets/Day_01/Captura de ecrã 2026-05-19 140852 1.png",
+    "docs/assets/screenshots/Day_01/Captura de ecrã 2026-05-19 140852 1.png",
     "Screenshots/Day_01/Captura de ecrã 2026-05-19 140852.png",
-    "docs/assets/Day_01",
+    "docs/assets/screenshots/Day_01",
     "Worksheets/Drafts/Day_01_Worksheet.md",
     "docs/worksheets/Day_01_Worksheet.md",
     "docs/worksheets/README.md",
