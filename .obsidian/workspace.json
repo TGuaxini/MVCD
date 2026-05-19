@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs_PUBLISHING_GUIDE.md",
+                "file": "docs/worksheets/Day_01_Worksheet.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "docs_PUBLISHING_GUIDE"
+              "title": "Day_01_Worksheet"
             }
           }
         ]
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs_PUBLISHING_GUIDE.md",
+                "file": "docs/worksheets/Day_01_Worksheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +124,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for docs_PUBLISHING_GUIDE"
+              "title": "Backlinks for Day_01_Worksheet"
             }
           },
           {
@@ -133,12 +133,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs_PUBLISHING_GUIDE.md",
+                "file": "docs/worksheets/Day_01_Worksheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from docs_PUBLISHING_GUIDE"
+              "title": "Outgoing links from Day_01_Worksheet"
             }
           },
           {
@@ -176,13 +176,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs_PUBLISHING_GUIDE.md",
+                "file": "docs/worksheets/Day_01_Worksheet.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of docs_PUBLISHING_GUIDE"
+              "title": "Outline of Day_01_Worksheet"
             }
           }
         ]
@@ -205,22 +205,23 @@
   },
   "active": "8690d374ea48cece",
   "lastOpenFiles": [
+    "docs/worksheets/README.md",
+    "docs/data/progress.example.json",
+    "docs/viewer.js",
+    "docs/viewer.html",
+    "Worksheets/Drafts/Day_01_Worksheet.md",
+    "docs/worksheets/Day_01_Worksheet.md",
+    "docs_PUBLISHING_GUIDE.md",
     "data/progress.json",
     "data",
     "docs/logs/Day_01_Draft.md",
     "Daily Logs/Completed/Day_01_Draft.md",
-    "docs_PUBLISHING_GUIDE.md",
-    "Worksheets/Drafts/Day_01_Worksheet.md",
     "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettingsE20302B14F973F3C48E3B8BF66CF518D.tmp",
     "Unreal/MVCD_Unreal/Saved/Config/WindowsEditor/Editor.ini",
     "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Cache/Cache_Data/data_1",
     "Unreal/MVCD_Unreal/Saved/webcache_6613/b7db9d81-77b4-4951-935e-de3affe2c21e.tmp",
     "Unreal/MVCD_Unreal/Saved/AutoScreenshot.png",
     "Unreal/MVCD_Unreal/Saved/Autosaves/PackageRestoreData.json",
-    "Unreal/MVCD_Unreal/Saved/Autosaves",
-    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/b6612bdd-6a57-4a53-af2b-b8b8971ea0d7.tmp",
-    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/45a13509-812e-43d6-9503-62fa494a4302.tmp",
-    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Extension Scripts/MANIFEST-000001",
     "Screenshots/Day_01/Captura de ecrã 2026-05-19 140852.png",
     "Screenshots/Screenshots.md",
     "Screenshots/Day_01.png",
