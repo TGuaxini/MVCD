@@ -203,8 +203,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "ffd0560a781f2b3e",
+  "active": "8690d374ea48cece",
   "lastOpenFiles": [
+    "data/progress.json",
+    "data",
     "docs/logs/Day_01_Draft.md",
     "Daily Logs/Completed/Day_01_Draft.md",
     "docs_PUBLISHING_GUIDE.md",
@@ -219,7 +221,6 @@
     "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/b6612bdd-6a57-4a53-af2b-b8b8971ea0d7.tmp",
     "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/45a13509-812e-43d6-9503-62fa494a4302.tmp",
     "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Extension Scripts/MANIFEST-000001",
-    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Extension Scripts/LOG",
     "Screenshots/Day_01/Captura de ecrã 2026-05-19 140852.png",
     "Screenshots/Screenshots.md",
     "Screenshots/Day_01.png",
