@@ -1,0 +1,46 @@
+{
+  "Day_01": {
+    "title": "Day 01 Evidence",
+    "description": "Infrastructure setup evidence for the MVCD dissertation production pipeline.",
+    "images": [
+      {
+        "file": "./assets/screenshots/Day_01/Dashboard_Live.png",
+        "caption": "Dashboard Live"
+      },
+      {
+        "file": "./assets/screenshots/Day_01/Obsidian_Vault.png",
+        "caption": "Obsidian Vault"
+      },
+      {
+        "file": "./assets/screenshots/Day_01/Repository_Structure.png",
+        "caption": "Repository Structure"
+      }
+    ]
+  },
+  "Day_02": {
+    "title": "Day 02 Evidence",
+    "description": "UE5 framework initialization evidence, including project setup, plugins, folders, and C++ architecture classes.",
+    "images": [
+      {
+        "file": "./assets/screenshots/Day_02/Content_Folder_Structure.png",
+        "caption": "Content Folder Structure"
+      },
+      {
+        "file": "./assets/screenshots/Day_02/Core_Classes_Created.png",
+        "caption": "Core Classes Created"
+      },
+      {
+        "file": "./assets/screenshots/Day_02/Destruction_Classes_Created.png",
+        "caption": "Destruction Classes Created"
+      },
+      {
+        "file": "./assets/screenshots/Day_02/Plugins_Enabled.png",
+        "caption": "Plugins Enabled"
+      },
+      {
+        "file": "./assets/screenshots/Day_02/UE_Project_Created.png",
+        "caption": "UE Project Created"
+      }
+    ]
+  }
+}

@@ -10,7 +10,7 @@
       "summary": "Configured the thesis production pipeline, GitHub Pages dashboard, and Obsidian documentation workflow.",
       "log": "./viewer.html?file=logs/Day_01_Draft.md&type=Daily%20Log",
       "worksheet": "./viewer.html?file=worksheets/Day_01_Worksheet.md&type=Worksheet",
-      "evidence": "./assets/screenshots/Day_01/"
+      "evidence": "./gallery.html?day=Day_01"
     },
     {
     "title": "Day 02 - UE5 Framework Initialization",
@@ -20,7 +20,7 @@
     "summary": "Created the UE5.7.4 C++ project, enabled destruction-related plugins, configured project folders, and initialized the core/destruction framework classes.",
     "log": "./viewer.html?file=logs/Day_02_Draft.md&type=Daily%20Log",
     "worksheet": "./viewer.html?file=worksheets/Day_02_Worksheet.md&type=Worksheet",
-    "evidence": "./assets/screenshots/Day_02/"
+    "evidence": "./gallery.html?day=Day_02"
     }
   ]
 }
