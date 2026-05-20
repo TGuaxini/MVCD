@@ -35,12 +35,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/worksheets/README.md",
+                "file": "docs/logs/Day_02_Draft.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Day_02_Draft"
             }
           }
         ]
@@ -205,13 +205,17 @@
       "bases:Create new base": false
     }
   },
-  "active": "555edd92d9752333",
+  "active": "8690d374ea48cece",
   "lastOpenFiles": [
+    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/1e033918-2d07-4c1c-b7c0-8400d85ced06.tmp",
     "Daily Logs/Completed/Day_02_Draft.md",
+    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/552ae9d4-0f5d-4217-a7c7-8836acd4a1c8.tmp",
+    "Daily Logs/Completed/Day_01_Draft.md",
+    "docs/worksheets/README.md",
+    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/8dbec64e-8137-4235-a1ca-e721ab5fc650.tmp",
     "docs/logs/Day_02_Draft.md",
     "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/fa421d75-9dab-42ce-ae20-2ccd32463b4a.tmp",
     "docs/logs/Day_01_Draft.md",
-    "Daily Logs/Completed/Day_01_Draft.md",
     "Architecture/Architecture.md",
     "Architecture/Website Improvements Roadmap.md",
     "Architecture/MVCD_Framework_Architecture_Initial.md",
@@ -236,11 +240,8 @@
     "Worksheets/Drafts/Day_01_Worksheet.md",
     "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/20faff84-0b8f-4a26-9026-e8ee2cce6adb.tmp",
     "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/cd053ab7-49c3-4bca-926f-285fac6ae695.tmp",
-    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/3c39fb2a-6543-400c-a7e4-85600056f6e7.tmp",
-    "Unreal/MVCD_Unreal/Intermediate/Build/Win64/x64/UnrealEditor/Development/MVCD_Unreal/Module.MVCD_Unreal.cpp.lc.obj",
     "Screenshots/Untitled.md",
     "Daily Logs/Daily Logs.md",
-    "docs/worksheets/README.md",
     "docs_PUBLISHING_GUIDE.md",
     "Screenshots/Screenshots.md",
     "Site/Saber Thesis Dashboard.md",
