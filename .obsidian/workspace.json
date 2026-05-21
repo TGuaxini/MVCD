@@ -4,30 +4,8 @@
     "type": "split",
     "children": [
       {
-        "id": "ba07ac85f71a807d",
-        "type": "tabs",
-        "dimension": 47.609692206941716,
-        "children": [
-          {
-            "id": "4e52b833769bc070",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/logs/Day_02_Draft.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Day_02_Draft"
-            }
-          }
-        ]
-      },
-      {
         "id": "4f354ac805154428",
         "type": "tabs",
-        "dimension": 52.39030779305829,
         "children": [
           {
             "id": "555edd92d9752333",
@@ -35,7 +13,27 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/logs/Day_02_Draft.md",
+                "file": "Worksheets/Drafts/Day_03_Worksheet.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Day_03_Worksheet"
+            }
+          }
+        ]
+      },
+      {
+        "id": "f3a611f989887864",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4bf44e93122d93cb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Daily Logs/Completed/Day_02_Draft.md",
                 "mode": "source",
                 "source": false
               },
@@ -100,7 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 518.5
+    "width": 374.5
   },
   "right": {
     "id": "7db4e1e255feb4a6",
@@ -205,53 +203,53 @@
       "bases:Create new base": false
     }
   },
-  "active": "8690d374ea48cece",
+  "active": "555edd92d9752333",
   "lastOpenFiles": [
-    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettings5454EDE04B48EA9D41F9F2A40FFAE686.tmp",
-    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettings0832754D434A3EE8421B69819571C587.tmp",
-    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettings954B02D949875443260BEFBD6FD3B4D7.tmp",
-    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettingsFA4EF7AD44DECC0AB49E3A8BA045536E.tmp",
-    "Unreal/MVCD_Unreal/Saved/webcache_6613/b8d82dab-491d-47b2-a8c2-a7bbe8b4970b.tmp",
-    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettings025F1D5F4D42DBE5D3BBB5999699C78C.tmp",
-    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettingsDB02C67D47D54CE50E8F13BCF1532574.tmp",
-    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/d66c4945-62ad-40bb-a3fb-1dcf07246b02.tmp",
-    "docs/data/evidence.json",
-    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/05cdb6ba-ecdd-4a45-aa6c-b50699b00aab.tmp",
-    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/821e241a-b4a4-42d3-a72d-7cf4e331acf7.tmp",
-    "Daily Logs/Completed/Day_02_Draft.md",
-    "Daily Logs/Completed/Day_01_Draft.md",
-    "docs/worksheets/README.md",
-    "docs/logs/Day_02_Draft.md",
+    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/aeca1385-8108-4989-a8e8-a37acbc76ee7.tmp",
+    "docs/Site.md",
+    "docs/worksheets/Day_01_Worksheet.md",
+    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/3cfc2b95-47dd-4083-9867-85b7d4a2fa88.tmp",
+    "docs/logs/Day_03_Draft.md",
+    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/e10d41b9-78c6-4998-88eb-0889cf5052c5.tmp",
+    "Daily Logs/Completed/Day_03_Draft.md",
     "docs/logs/Day_01_Draft.md",
+    "docs/logs/Day_02_Draft.md",
+    "Worksheets/Drafts/Day_03_Worksheet.md",
+    "Daily Logs/Completed/Day_02_Draft.md",
+    "docs/assets/screenshots/Day_03/Test_Destructible_Actor.png",
+    "docs/assets/screenshots/Day_03/Geometry_Collection_Setup.png",
+    "docs/assets/screenshots/Day_03/Framework_Classes_Visible.png",
+    "docs/assets/screenshots/Day_03/First_Destruction_Test.png",
+    "docs/assets/screenshots/Day_03/Destruction_Framework_Notes.png",
+    "Screenshots/Day_03/Geometry_Collection_Setup.png",
+    "Screenshots/Day_03/Test_Destructible_Actor.png",
+    "Screenshots/Day_03/Framework_Classes_Visible.png",
+    "Screenshots/Day_03/First_Destruction_Test.png",
+    "Screenshots/Day_03/Destruction_Framework_Notes.png",
+    "Unreal/MVCD_Unreal/Saved/Autosaves/Game/Testing/L_TestDestructionSandbox_Auto4.umap",
+    "Unreal/MVCD_Unreal/Saved/L_TestDestructionSandbox_Auto4EB7515644EF8AC66C26716AE9D2FF375.tmp",
+    "docs/worksheets/Day_02_Worksheet.md",
+    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettings94F9E9A74223F72B41EAF79B639697F5.tmp",
+    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/1d30f4f5-1eaf-474e-9066-7e6f33496176.tmp",
+    "Daily Logs/Completed/Day_01_Draft.md",
+    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/4d749a55-9e43-4456-b4f1-7ea89eeacd17.tmp",
+    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/32b95d0b-476b-46ac-9261-4f943a9265d1.tmp",
+    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/aaf8a0b5-11ee-46e2-8b7e-eff130769d96.tmp",
+    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/c6b1e273-82a6-4e9b-89c0-151fdeefa6b6.tmp",
+    "Architecture/Destruction Framework Notes.md",
+    "Thesis Notes/Untitled.md",
+    "Architecture/Day_03_First_Destruction_Prototype.md",
+    "Worksheets/Drafts/Day_01_Worksheet.md",
+    "docs/worksheets/README.md",
     "Architecture/Architecture.md",
     "Architecture/Website Improvements Roadmap.md",
     "Architecture/MVCD_Framework_Architecture_Initial.md",
     "Worksheets/Drafts/Day_02_Worksheet.md",
-    "docs/worksheets/Day_02_Worksheet.md",
-    "docs/assets/screenshots/Day_02/UE_Project_Created.png",
-    "docs/assets/screenshots/Day_02/Plugins_Enabled.png",
-    "docs/assets/screenshots/Day_02/Destruction_Classes_Created.png",
-    "docs/assets/screenshots/Day_02/Core_Classes_Created.png",
-    "docs/assets/screenshots/Day_02/Content_Folder_Structure.png",
-    "Screenshots/Day_02/UE_Project_Created.png",
-    "Screenshots/Day_02/Plugins_Enabled.png",
-    "Screenshots/Day_02/Destruction_Classes_Created.png",
-    "Screenshots/Day_02/Core_Classes_Created.png",
-    "Screenshots/Day_02/Content_Folder_Structure.png",
-    "docs/worksheets/Day_01_Worksheet.md",
-    "Worksheets/Drafts/Day_01_Worksheet.md",
     "Screenshots/Untitled.md",
     "Daily Logs/Daily Logs.md",
     "docs_PUBLISHING_GUIDE.md",
     "Screenshots/Screenshots.md",
     "Site/Saber Thesis Dashboard.md",
-    "Benchmarks/Benchmark_Template.md",
-    "Templates/Worksheet_Template.md",
-    "Templates/Daily_Log_Template.md",
-    "Templates/Benchmark_Template.md",
-    "Templates/Architecture_Note_Template.md",
-    "Assets/Assets.md",
-    "Site/Site.md",
-    "docs/Site.md"
+    "Benchmarks/Benchmark_Template.md"
   ]
 }

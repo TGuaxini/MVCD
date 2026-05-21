@@ -1,9 +1,9 @@
 # Day 01 - Infrastructure and Project Setup
 
 ## Status
-- State: Draft
+- State: Completed
 - Date: 19/05/2026
-- Hours Worked:
+- Hours Worked: 4h
 - Main Focus: Prepare the development pipeline before Unreal implementation.
 
 ## Planned Tasks
@@ -23,23 +23,36 @@
 - [x] Day 01 worksheet prepared
 
 ## Technical Notes
-Use this section to describe the repository/site/Obsidian setup.
+The project repository was initialized using GitHub and configured for public GitHub Pages deployment. The documentation workflow was designed around Obsidian as the primary writing environment and GitHub as the version-controlled publication platform.
+
+A structured folder hierarchy was created to separate daily logs, worksheets, research material, architecture notes, screenshots, benchmarks, assets and thesis documentation. A website dashboard was integrated into the repository and configured for deployment through GitHub Pages.
+
+The website architecture was modified to operate from the `/docs` directory to comply with GitHub Pages deployment restrictions. The dashboard was configured to read project progress from JSON data files and provide public access to development evidence.
 
 ## Problems Encountered
 Example:
-- GitHub Pages only allowed `/root` or `/docs`, so the dashboard was moved to `/docs`.
+- GitHub Pages only supported deployment from `/root` or `/docs`, requiring relocation of the website files.
+- Empty repository folders were not visible on GitHub because Git does not track empty directories.
+- Initial confusion existed between the repository root and the website deployment structure.
+- Progress data was initially updated in the wrong JSON file due to the existence of multiple data locations.
+- Evidence screenshots required additional organization to support future public presentation.
 
 ## Solutions / Decisions
 Example:
-- The website will be hosted from `/docs`.
-- Obsidian will remain the main writing environment.
-- Completed days will only appear on the website after being added to `docs/data/progress.json`.
-
+- The website deployment target was standardized to the `/docs` directory.
+- README files were added to repository folders so they would be tracked by Git.
+- Obsidian was selected as the primary documentation environment.
+- Daily development evidence would be published through GitHub Pages after completion of each workday.
+- Project progress would be maintained through `docs/data/progress.json`.
+- Screenshot evidence would be organized by day to simplify traceability and future dissertation references.
+- The repository structure was finalized before beginning Unreal Engine implementation work.
 ## Evidence Captured
 - Screenshot: GitHub repository structure
-- Screenshot: GitHub Pages live dashboard
-- Screenshot: Obsidian vault folders
-- Commit:
+- Screenshot: GitHub Pages deployment settings
+- Screenshot: Public dashboard deployment
+- Screenshot: Obsidian vault structure
+- Screenshot: Repository folder organization
+- Commit: Initial infrastructure and documentation pipeline setup
 
 ## Dissertation Notes
 This day establishes the documentation and evidence pipeline for the project. It supports the dissertation by creating a traceable development process and making the technical work reproducible and reviewable.

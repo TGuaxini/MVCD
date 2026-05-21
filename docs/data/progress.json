@@ -21,6 +21,16 @@
     "log": "./viewer.html?file=logs/Day_02_Draft.md&type=Daily%20Log",
     "worksheet": "./viewer.html?file=worksheets/Day_02_Worksheet.md&type=Worksheet",
     "evidence": "./gallery.html?day=Day_02"
+    },
+    {
+    "title": "Day 03 - First Destruction Actor Prototype",
+    "date": "2026-05-21",
+    "hours": "4h",
+    "completion": "Completed",
+    "summary": "Created the first destruction sandbox, generated and fractured a Geometry Collection asset, validated Chaos integration, and documented the event-driven destruction architecture.",
+    "log": "./viewer.html?file=logs/Day_03_Draft.md&type=Daily%20Log",
+    "worksheet": "./viewer.html?file=worksheets/Day_03_Worksheet.md&type=Worksheet",
+    "evidence": "./gallery.html?day=Day_03"
     }
   ]
 }

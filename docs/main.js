@@ -47,7 +47,6 @@ function renderDays() {
       <p class="summary">${day.summary || ""}</p>
       <div class="links">
         ${day.log ? `<a href="${day.log}">Daily log</a>` : ""}
-        ${day.worksheet ? `<a href="${day.worksheet}">Worksheet</a>` : ""}
         ${day.evidence ? `<a href="${day.evidence}">Evidence</a>` : ""}
       </div>
     </article>

@@ -42,5 +42,31 @@
         "caption": "UE Project Created"
       }
     ]
+  },
+  "Day_03": {
+    "title": "Day 03 Evidence",
+    "description": "Evidence screenshots for Day 03.",
+    "images": [
+      {
+        "file": "./assets/screenshots/Day_03/Destruction_Framework_Notes.png",
+        "caption": "Destruction Framework Notes"
+      },
+      {
+        "file": "./assets/screenshots/Day_03/First_Destruction_Test.png",
+        "caption": "First Destruction Test"
+      },
+      {
+        "file": "./assets/screenshots/Day_03/Framework_Classes_Visible.png",
+        "caption": "Framework Classes Visible"
+      },
+      {
+        "file": "./assets/screenshots/Day_03/Geometry_Collection_Setup.png",
+        "caption": "Geometry Collection Setup"
+      },
+      {
+        "file": "./assets/screenshots/Day_03/Test_Destructible_Actor.png",
+        "caption": "Test Destructible Actor"
+      }
+    ]
   }
 }
