@@ -104,11 +104,11 @@ Document:
 Estimated time: 15 minutes
 
 - [x] Update daily log
-- [ ] Store screenshots in docs/assets/screenshots/Day_03/
-- [ ] Run evidence generation script if Python is available
-- [ ] Update progress.json after completion
-- [ ] Commit changes
-- [ ] Push origin
+- [x] Store screenshots in docs/assets/screenshots/Day_03/
+- [x] Run evidence generation script if Python is available
+- [x] Update progress.json after completion
+- [x] Commit changes
+- [x] Push origin
 
 ---
 

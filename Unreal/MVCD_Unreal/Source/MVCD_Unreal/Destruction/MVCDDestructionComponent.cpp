@@ -32,3 +32,26 @@ void UMVCDDestructionComponent::TickComponent(float DeltaTime, ELevelTick TickTy
 	// ...
 }
 
+void UMVCDDestructionComponent::ApplyDamage(const FMVCDDestructionEvent& DestructionEvent)
+{
+	CurrentIntegrity -= DestructionEvent.DamageAmount;
+
+	UE_LOG(LogTemp, Warning, TEXT("MVCD Destruction Component: Damage Applied: %f | Current Integrity: %f"),
+		DestructionEvent.DamageAmount,
+		CurrentIntegrity);
+
+	if (CanBeDestroyed())
+	{
+		HandleDestruction(DestructionEvent);
+	}
+}
+
+bool UMVCDDestructionComponent::CanBeDestroyed() const
+{
+	return CurrentIntegrity <= DestructionThreshold;
+}
+
+void UMVCDDestructionComponent::HandleDestruction(const FMVCDDestructionEvent& DestructionEvent)
+{
+	UE_LOG(LogTemp, Warning, TEXT("MVCD Destruction Component: Destruction Triggered"));
+}

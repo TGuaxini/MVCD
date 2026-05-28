@@ -68,5 +68,31 @@
         "caption": "Test Destructible Actor"
       }
     ]
+  },
+  "Day_04": {
+    "title": "Day 04 Evidence",
+    "description": "Evidence screenshots for Day 04.",
+    "images": [
+      {
+        "file": "./assets/screenshots/Day_04/Destruction_Component_Expanded.png",
+        "caption": "Destruction Component Expanded"
+      },
+      {
+        "file": "./assets/screenshots/Day_04/Destruction_Event_Struct.png",
+        "caption": "Destruction Event Struct"
+      },
+      {
+        "file": "./assets/screenshots/Day_04/Destruction_Manager_Expanded.png",
+        "caption": "Destruction Manager Expanded"
+      },
+      {
+        "file": "./assets/screenshots/Day_04/Event_Processing_Test.png",
+        "caption": "Event Processing Test"
+      },
+      {
+        "file": "./assets/screenshots/Day_04/Material_Resistance_Notes.png",
+        "caption": "Material Resistance Notes"
+      }
+    ]
   }
 }
