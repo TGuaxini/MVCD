@@ -27,6 +27,9 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "MVCD|Destruction")
 	void HandleDestruction(const FMVCDDestructionEvent& DestructionEvent);
 
+	UFUNCTION(BlueprintCallable, Category = "MVCD|Destruction")
+	void TriggerDestructionResponse(const FMVCDDestructionEvent& DestructionEvent);
+
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
@@ -39,6 +42,9 @@ protected:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "MVCD|Destruction")
 	UGeometryCollectionComponent* GeometryCollectionComponent = nullptr;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "MVCD|Destruction")
+	float DestructionImpulseStrength = 250000.0f;
 
 	UFUNCTION(BlueprintCallable, Category = "MVCD|Destruction")
 	void CacheGeometryCollectionComponent();

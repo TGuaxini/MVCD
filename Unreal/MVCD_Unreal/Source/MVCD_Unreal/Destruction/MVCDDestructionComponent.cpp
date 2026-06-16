@@ -34,6 +34,11 @@ void UMVCDDestructionComponent::TickComponent(float DeltaTime, ELevelTick TickTy
 
 void UMVCDDestructionComponent::ApplyDamage(const FMVCDDestructionEvent& DestructionEvent)
 {
+	if (!IsValid(GeometryCollectionComponent))
+	{
+		CacheGeometryCollectionComponent();
+	}
+
 	CurrentIntegrity -= DestructionEvent.DamageAmount;
 
 	UE_LOG(LogTemp, Warning, TEXT("MVCD Destruction Component: Damage Applied: %f | Current Integrity: %f"),
@@ -54,6 +59,8 @@ bool UMVCDDestructionComponent::CanBeDestroyed() const
 void UMVCDDestructionComponent::HandleDestruction(const FMVCDDestructionEvent& DestructionEvent)
 {
 	UE_LOG(LogTemp, Warning, TEXT("MVCD Destruction Component: Destruction Triggered"));
+
+	TriggerDestructionResponse(DestructionEvent);
 }
 
 void UMVCDDestructionComponent::CacheGeometryCollectionComponent()
@@ -77,4 +84,29 @@ void UMVCDDestructionComponent::CacheGeometryCollectionComponent()
 		UE_LOG(LogTemp, Warning, TEXT("MVCD Destruction Component: No Geometry Collection found on %s"),
 			*Owner->GetName());
 	}
+}
+
+void UMVCDDestructionComponent::TriggerDestructionResponse(const FMVCDDestructionEvent& DestructionEvent)
+{
+	if (!IsValid(GeometryCollectionComponent))
+	{
+		UE_LOG(LogTemp, Warning, TEXT("MVCD Destruction Component: Cannot trigger destruction response. Geometry Collection is invalid."));
+		return;
+	}
+
+	FVector ImpulseDirection = DestructionEvent.ImpactDirection;
+
+	if (ImpulseDirection.IsNearlyZero())
+	{
+		ImpulseDirection = FVector::UpVector;
+	}
+
+	ImpulseDirection.Normalize();
+
+	const FVector Impulse = ImpulseDirection * DestructionImpulseStrength;
+
+	GeometryCollectionComponent->AddImpulse(Impulse, NAME_None, true);
+
+	UE_LOG(LogTemp, Warning, TEXT("MVCD Destruction Component: Applied impulse to Geometry Collection. Strength: %f"),
+		DestructionImpulseStrength);
 }

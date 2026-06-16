@@ -50,6 +50,15 @@
     "summary": "Connected the event-driven destruction framework to Unreal Geometry Collection runtime by adding Geometry Collection discovery, validating manager-to-component communication, and resolving the required module dependency.",
     "log": "./viewer.html?file=logs/Day_05_Draft.md&type=Daily%20Log",
     "evidence": "./gallery.html?day=Day_05"
+    },
+    {
+    "title": "Day 06 - Framework Controlled Destruction Response",
+    "date": "2026-06-17",
+    "hours": "4h",
+    "completion": "Completed",
+    "summary": "Implemented framework-controlled destruction responses by applying runtime impulses to Geometry Collections through the destruction-event pipeline and validated the first active Chaos interaction.",
+    "log": "./viewer.html?file=logs/Day_06_Draft.md&type=Daily%20Log",
+    "evidence": "./gallery.html?day=Day_06"
     }
   ]
 }

@@ -116,5 +116,27 @@
         "caption": "Geometry Trigger Test"
       }
     ]
+  },
+  "Day_06": {
+    "title": "Day 06 Evidence",
+    "description": "Evidence screenshots for Day 06.",
+    "images": [
+      {
+        "file": "./assets/screenshots/Day_06/Day06_Framework_Review.png",
+        "caption": "Day06 Framework Review"
+      },
+      {
+        "file": "./assets/screenshots/Day_06/Destruction_Response_Function.png",
+        "caption": "Destruction Response Function"
+      },
+      {
+        "file": "./assets/screenshots/Day_06/Framework_Controlled_Destruction.png",
+        "caption": "Framework Controlled Destruction"
+      },
+      {
+        "file": "./assets/screenshots/Day_06/Geometry_Response_Test.png",
+        "caption": "Geometry Response Test"
+      }
+    ]
   }
 }

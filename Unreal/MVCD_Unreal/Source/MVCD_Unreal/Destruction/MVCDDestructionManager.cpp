@@ -107,7 +107,7 @@ void AMVCDDestructionManager::RunTestDestructionEvent()
 	}
 
 	FMVCDDestructionEvent TestEvent;
-	TestEvent.DamageAmount = 50.0f;
+	TestEvent.DamageAmount = 150.0f;
 	TestEvent.TargetActor = TargetActor;
 	TestEvent.SourceActor = this;
 	TestEvent.ImpactLocation = TargetActor->GetActorLocation();
