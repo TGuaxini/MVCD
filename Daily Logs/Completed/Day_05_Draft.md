@@ -1,0 +1,104 @@
+# Day 05 - Event Driven Destruction Prototype
+
+## Status
+
+- State: Completed
+- Date: 16/06/2026
+- Hours Worked: 4h
+- Main Focus: Connect the destruction-event framework to actual Geometry Collection behaviour.
+
+---
+
+## Planned Tasks
+
+- [x] Review Day 04 framework
+- [x] Verify framework compilation
+- [x] Connect destruction events to Geometry Collection workflow
+- [x] Improve destruction component architecture
+- [x] Validate event-driven destruction pipeline
+- [x] Capture evidence screenshots
+- [x] Compile successfully
+
+---
+
+## Work Completed
+
+- [x] Reviewed the existing Day 04 destruction-event framework.  
+- [x] Verified the FMVCDDestructionEvent structure remained functional.  
+- [x] Verified MVCDDestructionManager event routing.  
+- [x] Verified MVCDDestructionComponent damage-processing behaviour.  
+- [x] Added Geometry Collection discovery to the destruction component.  
+- [x] Connected the framework layer to the Geometry Collection runtime dependency.  
+- [x] Updated the Unreal module dependencies to include GeometryCollectionEngine.  
+- [x] Validated the event-to-manager-to-component communication flow.  
+- [x] Confirmed Geometry Collection detection through runtime Output Log messages.  
+- [x] Captured implementation evidence screenshots.
+
+---
+
+## Technical Notes
+
+Day 05 focused on connecting the event-driven framework architecture to the Geometry Collection runtime layer. The destruction framework was previously capable of creating and processing destruction events, but it did not yet interact with Chaos or Geometry Collection components directly.  
+  
+The MVCDDestructionComponent was expanded to cache a UGeometryCollectionComponent from its owning actor. This introduces the first framework-level connection between MVCD destruction logic and Unreal Engine's Geometry Collection system.  
+  
+A new CacheGeometryCollectionComponent() function was added to the destruction component and called during BeginPlay. This allows the component to search its owning actor for a Geometry Collection component and store a reference for future destruction behaviour.  
+  
+The MVCDDestructionManager event flow was reviewed and validated using RunTestDestructionEvent(). The manager registered tagged destructible actors, generated a test destruction event, routed it to the target destruction component and confirmed damage processing through the Output Log.  
+  
+The project module configuration was updated to include GeometryCollectionEngine as a dependency. This was required because referencing UGeometryCollectionComponent in C++ requires linking against the Unreal module that owns the Geometry Collection runtime implementation.  
+  
+The full validation confirmed the current framework pipeline:  
+  
+Event  
+→ Manager  
+→ Component  
+→ Geometry Collection reference  
+  
+This means the framework is now connected to the correct runtime layer, although it does not yet trigger actual fracture behaviour through the event system.
+
+---
+
+## Problems Encountered
+
+- The first compile attempt failed because UGeometryCollectionComponent was referenced without the required module dependency.  
+- Unreal produced linker errors related to Geometry Collection symbols.  
+- The Build.cs dependency system needed to be updated to formally link the project module against GeometryCollectionEngine.  
+- Include order warnings appeared because Unreal expects each .cpp file to include its matching header first.  
+- There was initial uncertainty about whether the current validation represented Geometry Collection integration or full destruction triggering.
+
+---
+
+## Solutions / Decisions
+
+- GeometryCollectionEngine was added to MVCD_Unreal.Build.cs to resolve the linker errors.  
+- Matching headers were kept as the first includes in their respective .cpp files to satisfy Unreal build expectations.  
+- Geometry Collection integration was kept focused on discovery and caching rather than direct fracture triggering.  
+- The framework validation was accepted as successful because the event pipeline now reaches a component that can identify a Geometry Collection.  
+- Full event-driven fracture triggering was deferred to Day 06 to avoid mixing integration validation with runtime destruction implementation.  
+- The architecture remains modular: the manager routes events, the component handles local actor logic and the Geometry Collection reference prepares the next destruction stage.
+
+---
+
+## Evidence Captured
+
+- Screenshot: Framework_Review.png  
+- Screenshot: Event_Integration.png  
+- Screenshot: Geometry_Trigger_Test.png  
+- Screenshot: Framework_Validation.png  
+- Commit: Event-driven destruction integration with Geometry Collection runtime
+
+---
+
+## Dissertation Notes
+
+This development stage transitions the MVCD framework from architectural planning into practical event-driven destruction. The objective is to validate that destruction events generated by the framework become the primary mechanism responsible for triggering destruction behaviour while maintaining clear separation between event management and local destruction logic.
+
+---
+
+## Tomorrow
+
+- [ ] Introduce configurable destruction parameters
+- [ ] Improve framework abstraction
+- [ ] Prepare benchmark scenarios
+- [ ] Expand destruction testing environment

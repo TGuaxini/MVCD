@@ -18,8 +18,9 @@ public class MVCD_Unreal : ModuleRules
 			"StateTreeModule",
 			"GameplayStateTreeModule",
 			"UMG",
-			"Slate"
-		});
+			"Slate",
+            "GeometryCollectionEngine"
+        });
 
 		PrivateDependencyModuleNames.AddRange(new string[] { });
 

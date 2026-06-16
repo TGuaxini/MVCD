@@ -26,6 +26,9 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "MVCD|Destruction")
 	void ProcessDestructionEvent(const FMVCDDestructionEvent& DestructionEvent);
 
+	UFUNCTION(BlueprintCallable, Category = "MVCD|Destruction|Testing")
+	void RunTestDestructionEvent();
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

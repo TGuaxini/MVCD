@@ -28,15 +28,7 @@ void AMVCDDestructionManager::BeginPlay()
 		}
 	}
 
-	if (RegisteredDestructibleActors.Num() > 0)
-	{
-		FMVCDDestructionEvent TestEvent;
-
-		TestEvent.DamageAmount = 50.0f;
-		TestEvent.TargetActor = RegisteredDestructibleActors[0];
-
-		ProcessDestructionEvent(TestEvent);
-	}
+	RunTestDestructionEvent();
 }
 
 // Called every frame
@@ -96,4 +88,33 @@ void AMVCDDestructionManager::ProcessDestructionEvent(const FMVCDDestructionEven
 
 	UE_LOG(LogTemp, Warning, TEXT("MVCD Destruction Manager: Processed destruction event for %s"),
 		*DestructionEvent.TargetActor->GetName());
+}
+
+void AMVCDDestructionManager::RunTestDestructionEvent()
+{
+	if (RegisteredDestructibleActors.Num() <= 0)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("MVCD Destruction Manager: No registered destructible actors available for test event."));
+		return;
+	}
+
+	AActor* TargetActor = RegisteredDestructibleActors[0];
+
+	if (!IsValid(TargetActor))
+	{
+		UE_LOG(LogTemp, Warning, TEXT("MVCD Destruction Manager: Invalid target actor for test event."));
+		return;
+	}
+
+	FMVCDDestructionEvent TestEvent;
+	TestEvent.DamageAmount = 50.0f;
+	TestEvent.TargetActor = TargetActor;
+	TestEvent.SourceActor = this;
+	TestEvent.ImpactLocation = TargetActor->GetActorLocation();
+	TestEvent.ImpactDirection = FVector::DownVector;
+
+	UE_LOG(LogTemp, Warning, TEXT("MVCD Destruction Manager: Running test destruction event on %s"),
+		*TargetActor->GetName());
+
+	ProcessDestructionEvent(TestEvent);
 }

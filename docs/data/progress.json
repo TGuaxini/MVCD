@@ -41,6 +41,15 @@
     "log": "./viewer.html?file=logs/Day_04_Draft.md&type=Daily%20Log",
     "worksheet": "./viewer.html?file=worksheets/Day_04_Worksheet.md&type=Worksheet",
     "evidence": "./gallery.html?day=Day_04"
+    },
+    {
+    "title": "Day 05 - Event Driven Destruction Prototype",
+    "date": "2026-05-23",
+    "hours": "4h",
+    "completion": "Completed",
+    "summary": "Connected the event-driven destruction framework to Unreal Geometry Collection runtime by adding Geometry Collection discovery, validating manager-to-component communication, and resolving the required module dependency.",
+    "log": "./viewer.html?file=logs/Day_05_Draft.md&type=Daily%20Log",
+    "evidence": "./gallery.html?day=Day_05"
     }
   ]
 }

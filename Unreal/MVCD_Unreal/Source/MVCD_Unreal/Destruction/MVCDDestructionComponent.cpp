@@ -1,6 +1,6 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
+#include "GeometryCollection/GeometryCollectionComponent.h"
 #include "Destruction/MVCDDestructionComponent.h"
 
 // Sets default values for this component's properties
@@ -19,7 +19,7 @@ void UMVCDDestructionComponent::BeginPlay()
 {
 	Super::BeginPlay();
 
-	// ...
+	CacheGeometryCollectionComponent();
 	
 }
 
@@ -54,4 +54,27 @@ bool UMVCDDestructionComponent::CanBeDestroyed() const
 void UMVCDDestructionComponent::HandleDestruction(const FMVCDDestructionEvent& DestructionEvent)
 {
 	UE_LOG(LogTemp, Warning, TEXT("MVCD Destruction Component: Destruction Triggered"));
+}
+
+void UMVCDDestructionComponent::CacheGeometryCollectionComponent()
+{
+	AActor* Owner = GetOwner();
+
+	if (!IsValid(Owner))
+	{
+		return;
+	}
+
+	GeometryCollectionComponent = Owner->FindComponentByClass<UGeometryCollectionComponent>();
+
+	if (IsValid(GeometryCollectionComponent))
+	{
+		UE_LOG(LogTemp, Warning, TEXT("MVCD Destruction Component: Geometry Collection cached on %s"),
+			*Owner->GetName());
+	}
+	else
+	{
+		UE_LOG(LogTemp, Warning, TEXT("MVCD Destruction Component: No Geometry Collection found on %s"),
+			*Owner->GetName());
+	}
 }

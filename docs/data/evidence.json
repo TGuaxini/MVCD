@@ -94,5 +94,27 @@
         "caption": "Material Resistance Notes"
       }
     ]
+  },
+  "Day_05": {
+    "title": "Day 05 Evidence",
+    "description": "Evidence screenshots for Day 05.",
+    "images": [
+      {
+        "file": "./assets/screenshots/Day_05/Event_Integration.png",
+        "caption": "Event Integration"
+      },
+      {
+        "file": "./assets/screenshots/Day_05/Framework_Review.png",
+        "caption": "Framework Review"
+      },
+      {
+        "file": "./assets/screenshots/Day_05/Framework_Validation.png",
+        "caption": "Framework Validation"
+      },
+      {
+        "file": "./assets/screenshots/Day_05/Geometry_Trigger_Test.png",
+        "caption": "Geometry Trigger Test"
+      }
+    ]
   }
 }

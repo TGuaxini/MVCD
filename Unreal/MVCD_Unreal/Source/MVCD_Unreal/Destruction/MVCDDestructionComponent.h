@@ -7,6 +7,7 @@
 #include "Components/ActorComponent.h"
 #include "MVCDDestructionComponent.generated.h"
 
+class UGeometryCollectionComponent;
 
 UCLASS(ClassGroup = (Custom), meta = (BlueprintSpawnableComponent))
 class MVCD_UNREAL_API UMVCDDestructionComponent : public UActorComponent
@@ -35,6 +36,12 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "MVCD|Destruction")
 	float DestructionThreshold = 0.0f;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "MVCD|Destruction")
+	UGeometryCollectionComponent* GeometryCollectionComponent = nullptr;
+
+	UFUNCTION(BlueprintCallable, Category = "MVCD|Destruction")
+	void CacheGeometryCollectionComponent();
 
 public:	
 	// Called every frame
