@@ -1,8 +1,8 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
+#include "Destruction/MVCDDestructionManager.h"
 #include "TimerManager.h"
 #include "EngineUtils.h"
-#include "Destruction/MVCDDestructionManager.h"
 
 // Sets default values
 AMVCDDestructionManager::AMVCDDestructionManager()
@@ -83,7 +83,38 @@ void AMVCDDestructionManager::ProcessDestructionEvent(const FMVCDDestructionEven
 		return;
 	}
 
+	RegisterDamageEvent();
+
 	DestructionComponent->ApplyDamage(DestructionEvent);
+
+	switch (DestructionComponent->GetCurrentState())
+	{
+	case EMVCDDestructionState::Destroyed:
+		RegisterStateChange();
+		RegisterDestroyedObject();
+		break;
+
+	case EMVCDDestructionState::Damaged:
+		RegisterStateChange();
+		RegisterDamagedObject();
+		break;
+
+	case EMVCDDestructionState::Critical:
+		RegisterStateChange();
+		RegisterCriticalObject();
+		break;
+
+	default:
+		break;
+	}
+
+	UE_LOG(LogTemp, Warning,
+		TEXT("MVCD Metrics | Damage Events: %d | State Changes: %d | Destroyed: %d | Damaged: %d | Critical: %d"),
+		Metrics.TotalDamageEvents,
+		Metrics.TotalStateChanges,
+		Metrics.TotalDestroyedObjects,
+		Metrics.TotalDamagedObjects,
+		Metrics.TotalCriticalObjects);
 
 	UE_LOG(LogTemp, Warning, TEXT("MVCD Destruction Manager: Processed destruction event for %s"),
 		*DestructionEvent.TargetActor->GetName());
@@ -117,4 +148,29 @@ void AMVCDDestructionManager::RunTestDestructionEvent()
 
 		ProcessDestructionEvent(TestEvent);
 	}
+}
+
+void AMVCDDestructionManager::RegisterDamageEvent()
+{
+	Metrics.TotalDamageEvents++;
+}
+
+void AMVCDDestructionManager::RegisterStateChange()
+{
+	Metrics.TotalStateChanges++;
+}
+
+void AMVCDDestructionManager::RegisterDestroyedObject()
+{
+	Metrics.TotalDestroyedObjects++;
+}
+
+void AMVCDDestructionManager::RegisterDamagedObject()
+{
+	Metrics.TotalDamagedObjects++;
+}
+
+void AMVCDDestructionManager::RegisterCriticalObject()
+{
+	Metrics.TotalCriticalObjects++;
 }

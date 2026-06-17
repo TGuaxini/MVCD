@@ -155,3 +155,7 @@ void UMVCDDestructionComponent::UpdateDestructionState()
 			static_cast<int32>(CurrentState));
 	}
 }
+EMVCDDestructionState UMVCDDestructionComponent::GetCurrentState() const
+{
+	return CurrentState;
+}

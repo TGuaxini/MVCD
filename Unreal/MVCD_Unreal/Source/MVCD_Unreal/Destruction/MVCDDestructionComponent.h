@@ -39,6 +39,9 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "MVCD|Destruction")
 	void UpdateDestructionState();
 
+	UFUNCTION(BlueprintCallable, Category = "MVCD|Destruction")
+	EMVCDDestructionState GetCurrentState() const;
+
 protected:
 	virtual void BeginPlay() override;
 

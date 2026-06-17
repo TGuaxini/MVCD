@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/logs/Day_08_Draft.md",
+                "file": "Daily Logs/Drafts/Day_11_Draft.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day_08_Draft"
+              "title": "Day_11_Draft"
             }
           }
         ]
@@ -33,12 +33,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily Logs/Completed/Day_08_Draft.md",
+                "file": "Worksheets/Drafts/Day_11_Worksheet.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day_08_Draft"
+              "title": "Day_11_Worksheet"
             }
           }
         ]
@@ -203,30 +203,36 @@
       "bases:Create new base": false
     }
   },
-  "active": "8690d374ea48cece",
+  "active": "f9dcbf232db869e9",
   "lastOpenFiles": [
-    "Unreal/MVCD_Unreal/Saved/BP_TestDestructibleBuildingA277BA5D4414EEED8567C5914C8F91CA.tmp",
+    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettingsFAC25D2B4DB152CBD9AAF6ACB6C7DAAE.tmp",
+    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettingsFD1B0B4B485F451E58CB36BC2F85877B.tmp",
+    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettingsF805AF8442014C683D5F6FB7256D1076.tmp",
+    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettingsD2A4A02C4F3772EC662FF4BE9EFE6A67.tmp",
+    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettings782B7BA84C6B0996FF8217AE2EAE1F2D.tmp",
+    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettingsB4E684AA4162CED59CBCF5A1330014A6.tmp",
+    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettings21EECEC54B11744A5B439D95439E4C68.tmp",
+    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettingsA41A93D34663B8DE21045E8E74F88A79.tmp",
+    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettings11EB9DA24F2F23C450754BAB6265B3F4.tmp",
+    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettingsD0F1530C4A2C5393A670C595FC28FF17.tmp",
+    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettings6136239B4AFC52027A103785F7DFF2C2.tmp",
+    "Worksheets/Drafts/Day_09_Worksheet.md",
+    "Worksheets/Drafts/Day_11_Worksheet.md",
+    "Daily Logs/Drafts/Day_11_Draft.md",
+    "Worksheets/Drafts/Day_10_Worksheet.md",
+    "Daily Logs/Drafts/Day_10_Draft.md",
+    "Daily Logs/Drafts/Day_09_Draft.md",
+    "Daily Logs/Completed/Day_08_Draft.md",
+    "docs/logs/Day_08_Draft.md",
     "Screenshots/Day_08/Delegate_Broadcast_Test.png",
     "Screenshots/Day_08/Blueprint_Delegate_Validation.png",
     "Screenshots/Day_08/Day08_Framework_Review.png",
     "Screenshots/Day_08/State_Change_Delegate.png",
-    "Screenshots/Day_08",
-    "Screenshots/New folder",
     "docs/assets/screenshots/Day_08/Delegate_Broadcast_Test.png",
     "docs/assets/screenshots/Day_08/Blueprint_Delegate_Validation.png",
     "docs/assets/screenshots/Day_08/Day08_Framework_Review.png",
     "docs/assets/screenshots/Day_08/State_Change_Delegate.png",
-    "docs/assets/screenshots/Day_08",
-    "docs/assets/screenshots/New folder",
-    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/ed862796-0fef-4791-8554-a2e43ed07fc7.tmp",
-    "Daily Logs/Completed/Day_08_Draft.md",
-    "docs/logs/Day_08_Draft.md",
     "Worksheets/Drafts/Day_08_Worksheet.md",
-    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/a89a69a3-481a-433a-88e3-0b5d4d39f2e2.tmp",
-    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/0137003f-345c-4e81-b1cd-7589dc0ee3d8.tmp",
-    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/bfd412ae-574c-4b6e-bde1-bb27ae1293e9.tmp",
-    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/bf62c133-1727-4d9d-80c3-a4ded0df7810.tmp",
-    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/c2ac03fb-818c-4c28-b0db-bc20505d54cf.tmp",
     "Benchmarks/Benchmarks.md",
     "Worksheets/Drafts/Day_07_Worksheet.md",
     "docs/logs/Day_07_Draft.md",
@@ -244,12 +250,6 @@
     "Daily Logs/Completed/Day_05_Draft.md",
     "Daily Logs/Completed/Day_04_Draft.md",
     "Worksheets/Drafts/Day_04_Worksheet.md",
-    "docs/logs/Day_04_Draft.md",
-    "Architecture/Day 04 - Material Resistance Concept.md",
-    "docs/logs/Day_03_Draft.md",
-    "Worksheets/Drafts/Day_03_Worksheet.md",
-    "docs/logs/Day_02_Draft.md",
-    "Daily Logs/Completed/Day_02_Draft.md",
-    "docs/Site.md"
+    "docs/logs/Day_04_Draft.md"
   ]
 }

@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "MVCDDestructionEvent.h"
 #include "MVCDDestructionComponent.h"
+#include "Destruction/MVCDDestructionMetrics.h"
 #include "GameFramework/Actor.h"
 #include "MVCDDestructionManager.generated.h"
 
@@ -35,8 +36,18 @@ protected:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "MVCD|Destruction")
 	TArray<AActor*> RegisteredDestructibleActors;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "MVCD|Metrics")
+	FMVCDDestructionMetrics Metrics;
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+	void RegisterDamageEvent();
+	void RegisterStateChange();
+	void RegisterDestroyedObject();
+	void RegisterDamagedObject();
+	void RegisterCriticalObject();
 
 };
