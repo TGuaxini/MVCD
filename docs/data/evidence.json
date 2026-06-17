@@ -164,5 +164,27 @@
         "caption": "Object Behaviour Variants"
       }
     ]
+  },
+  "Day_08": {
+    "title": "Day 08 Evidence",
+    "description": "Evidence screenshots for Day 08.",
+    "images": [
+      {
+        "file": "./assets/screenshots/Day_08/Blueprint_Delegate_Validation.png",
+        "caption": "Blueprint Delegate Validation"
+      },
+      {
+        "file": "./assets/screenshots/Day_08/Day08_Framework_Review.png",
+        "caption": "Day08 Framework Review"
+      },
+      {
+        "file": "./assets/screenshots/Day_08/Delegate_Broadcast_Test.png",
+        "caption": "Delegate Broadcast Test"
+      },
+      {
+        "file": "./assets/screenshots/Day_08/State_Change_Delegate.png",
+        "caption": "State Change Delegate"
+      }
+    ]
   }
 }

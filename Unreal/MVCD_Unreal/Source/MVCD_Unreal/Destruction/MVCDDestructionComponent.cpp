@@ -142,8 +142,16 @@ void UMVCDDestructionComponent::UpdateDestructionState()
 	if (PreviousState != CurrentState)
 	{
 		UE_LOG(LogTemp, Warning,
-			TEXT("MVCD State Updated | Integrity: %.2f | State: %d"),
+			TEXT("MVCD State Updated | Integrity: %.2f | Previous State: %d | New State: %d"),
 			CurrentIntegrity,
+			static_cast<int32>(PreviousState),
+			static_cast<int32>(CurrentState));
+
+		OnStateChanged.Broadcast(PreviousState, CurrentState);
+
+		UE_LOG(LogTemp, Warning,
+			TEXT("MVCD Delegate Broadcast | Previous: %d | New: %d"),
+			static_cast<int32>(PreviousState),
 			static_cast<int32>(CurrentState));
 	}
 }

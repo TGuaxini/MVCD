@@ -9,6 +9,8 @@
 #include "Components/ActorComponent.h"
 #include "MVCDDestructionComponent.generated.h"
 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FMVCDOnStateChanged, EMVCDDestructionState, PreviousState, EMVCDDestructionState, NewState);
+
 class UGeometryCollectionComponent;
 
 UCLASS(ClassGroup = (Custom), meta = (BlueprintSpawnableComponent))
@@ -18,6 +20,9 @@ class MVCD_UNREAL_API UMVCDDestructionComponent : public UActorComponent
 
 public:
 	UMVCDDestructionComponent();
+
+	UPROPERTY(BlueprintAssignable, Category = "MVCD|Destruction")
+	FMVCDOnStateChanged OnStateChanged;
 
 	UFUNCTION(BlueprintCallable, Category = "MVCD|Destruction")
 	void ApplyDamage(const FMVCDDestructionEvent& DestructionEvent);

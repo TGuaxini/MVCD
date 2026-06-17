@@ -15,7 +15,7 @@
     {
     "title": "Day 02 - UE5 Framework Initialization",
     "date": "2026-05-20",
-    "hours": "4h",
+    "hours": "8h",
     "completion": "Completed",
     "summary": "Created the UE5.7.4 C++ project, enabled destruction-related plugins, configured project folders, and initialized the core/destruction framework classes.",
     "log": "./viewer.html?file=logs/Day_02_Draft.md&type=Daily%20Log",
@@ -25,7 +25,7 @@
     {
     "title": "Day 03 - First Destruction Actor Prototype",
     "date": "2026-05-21",
-    "hours": "4h",
+    "hours": "6h",
     "completion": "Completed",
     "summary": "Created the first destruction sandbox, generated and fractured a Geometry Collection asset, validated Chaos integration, and documented the event-driven destruction architecture.",
     "log": "./viewer.html?file=logs/Day_03_Draft.md&type=Daily%20Log",
@@ -45,7 +45,7 @@
     {
     "title": "Day 05 - Event Driven Destruction Prototype",
     "date": "2026-05-23",
-    "hours": "4h",
+    "hours": "8h",
     "completion": "Completed",
     "summary": "Connected the event-driven destruction framework to Unreal Geometry Collection runtime by adding Geometry Collection discovery, validating manager-to-component communication, and resolving the required module dependency.",
     "log": "./viewer.html?file=logs/Day_05_Draft.md&type=Daily%20Log",
@@ -54,7 +54,7 @@
     {
     "title": "Day 06 - Framework Controlled Destruction Response",
     "date": "2026-06-16",
-    "hours": "4h",
+    "hours": "8h",
     "completion": "Completed",
     "summary": "Implemented framework-controlled destruction responses by applying runtime impulses to Geometry Collections through the destruction-event pipeline and validated the first active Chaos interaction.",
     "log": "./viewer.html?file=logs/Day_06_Draft.md&type=Daily%20Log",
@@ -68,6 +68,15 @@
     "summary": "Implemented configurable destruction settings, destruction state tracking, and multiple object behaviour profiles. Refactored destruction logic to use data-driven settings and validated different destruction outcomes across Wood, Stone, and Metal variants using the same framework architecture.",
     "log": "./viewer.html?file=logs/Day_07_Draft.md&type=Daily%20Log",
     "evidence": "./gallery.html?day=Day_07"
+    },
+    {
+    "title": "Day 08 - Destruction Event Delegates and Notifications",
+    "date": "2026-06-17",
+    "hours": "8h",
+    "completion": "Completed",
+    "summary": "Implemented destruction state change delegates, Blueprint event notifications, and event-driven framework communication. Added multicast delegate broadcasting for destruction state transitions and validated Blueprint integration across multiple destruction object variants.",
+    "log": "./viewer.html?file=logs/Day_08_Draft.md&type=Daily%20Log",
+    "evidence": "./gallery.html?day=Day_08"
     }
   ]
 }
