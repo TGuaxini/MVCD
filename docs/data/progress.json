@@ -53,7 +53,7 @@
     },
     {
     "title": "Day 06 - Framework Controlled Destruction Response",
-    "date": "2026-06-17",
+    "date": "2026-06-16",
     "hours": "4h",
     "completion": "Completed",
     "summary": "Implemented framework-controlled destruction responses by applying runtime impulses to Geometry Collections through the destruction-event pipeline and validated the first active Chaos interaction.",
