@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "GeometryCollection/GeometryCollectionComponent.h"
 #include "Destruction/MVCDDestructionComponent.h"
+#include "GeometryCollection/GeometryCollectionComponent.h"
 
 // Sets default values for this component's properties
 UMVCDDestructionComponent::UMVCDDestructionComponent()
@@ -18,6 +18,8 @@ UMVCDDestructionComponent::UMVCDDestructionComponent()
 void UMVCDDestructionComponent::BeginPlay()
 {
 	Super::BeginPlay();
+
+	CurrentIntegrity = Settings.MaxIntegrity;
 
 	CacheGeometryCollectionComponent();
 	
@@ -41,7 +43,10 @@ void UMVCDDestructionComponent::ApplyDamage(const FMVCDDestructionEvent& Destruc
 
 	CurrentIntegrity -= DestructionEvent.DamageAmount;
 
-	UE_LOG(LogTemp, Warning, TEXT("MVCD Destruction Component: Damage Applied: %f | Current Integrity: %f"),
+	UpdateDestructionState();
+
+	UE_LOG(LogTemp, Warning,
+		TEXT("MVCD Damage Applied | Damage: %.2f | Remaining Integrity: %.2f"),
 		DestructionEvent.DamageAmount,
 		CurrentIntegrity);
 
@@ -53,7 +58,8 @@ void UMVCDDestructionComponent::ApplyDamage(const FMVCDDestructionEvent& Destruc
 
 bool UMVCDDestructionComponent::CanBeDestroyed() const
 {
-	return CurrentIntegrity <= DestructionThreshold;
+	return Settings.bCanBeDestroyed &&
+		CurrentIntegrity <= Settings.DestructionThreshold;
 }
 
 void UMVCDDestructionComponent::HandleDestruction(const FMVCDDestructionEvent& DestructionEvent)
@@ -76,13 +82,11 @@ void UMVCDDestructionComponent::CacheGeometryCollectionComponent()
 
 	if (IsValid(GeometryCollectionComponent))
 	{
-		UE_LOG(LogTemp, Warning, TEXT("MVCD Destruction Component: Geometry Collection cached on %s"),
-			*Owner->GetName());
+
 	}
 	else
 	{
-		UE_LOG(LogTemp, Warning, TEXT("MVCD Destruction Component: No Geometry Collection found on %s"),
-			*Owner->GetName());
+
 	}
 }
 
@@ -103,10 +107,43 @@ void UMVCDDestructionComponent::TriggerDestructionResponse(const FMVCDDestructio
 
 	ImpulseDirection.Normalize();
 
-	const FVector Impulse = ImpulseDirection * DestructionImpulseStrength;
+	const FVector Impulse = ImpulseDirection * Settings.ImpulseStrength;
 
 	GeometryCollectionComponent->AddImpulse(Impulse, NAME_None, true);
 
 	UE_LOG(LogTemp, Warning, TEXT("MVCD Destruction Component: Applied impulse to Geometry Collection. Strength: %f"),
-		DestructionImpulseStrength);
+		Settings.ImpulseStrength);
+}
+
+void UMVCDDestructionComponent::UpdateDestructionState()
+{
+	const float IntegrityPercent =
+		(CurrentIntegrity / Settings.MaxIntegrity) * 100.0f;
+
+	EMVCDDestructionState PreviousState = CurrentState;
+
+	if (CurrentIntegrity <= Settings.DestructionThreshold)
+	{
+		CurrentState = EMVCDDestructionState::Destroyed;
+	}
+	else if (IntegrityPercent <= 25.0f)
+	{
+		CurrentState = EMVCDDestructionState::Critical;
+	}
+	else if (IntegrityPercent <= 50.0f)
+	{
+		CurrentState = EMVCDDestructionState::Damaged;
+	}
+	else
+	{
+		CurrentState = EMVCDDestructionState::Healthy;
+	}
+
+	if (PreviousState != CurrentState)
+	{
+		UE_LOG(LogTemp, Warning,
+			TEXT("MVCD State Updated | Integrity: %.2f | State: %d"),
+			CurrentIntegrity,
+			static_cast<int32>(CurrentState));
+	}
 }

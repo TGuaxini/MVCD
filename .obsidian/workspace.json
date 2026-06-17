@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Worksheets/Drafts/Day_06_Worksheet.md",
+                "file": "Worksheets/Drafts/Day_07_Worksheet.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day_06_Worksheet"
+              "title": "Day_07_Worksheet"
             }
           }
         ]
@@ -33,12 +33,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/logs/Day_06_Draft.md",
+                "file": "docs/logs/Day_07_Draft.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day_06_Draft"
+              "title": "Day_07_Draft"
             }
           }
         ]
@@ -205,34 +205,39 @@
   },
   "active": "8690d374ea48cece",
   "lastOpenFiles": [
-    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettingsE1F305B1421927954D5AE787F1698DF8.tmp",
-    "Unreal/MVCD_Unreal/Saved/webcache_6613/26bab905-92ad-46be-9e27-15da0d6aafd2.tmp",
-    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettingsAA16DDF341794868CBCB4288B1C266D5.tmp",
-    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettings7D0D41FC425F0538638598A235B9EE4E.tmp",
-    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettingsF66CF486467E5AB8FB20E4A78B65B417.tmp",
-    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettings3F9142A04F33CB8AD1E93FA71801F546.tmp",
-    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettingsBD5073084327093103B6C3B2FE6CB392.tmp",
-    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettings95B5208F4B5574BE8FE5A5A9DAD05400.tmp",
-    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettings80D73912405F026CBC7B2BB60A4E43E9.tmp",
-    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettings678379264ECFF770652D12B76EC36961.tmp",
-    "Daily Logs/Completed/Day_06_Draft.md",
-    "docs/logs/Day_06_Draft.md",
-    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/e0133977-e094-40a6-94ef-b4fff9e8f5a7.tmp",
+    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/a91033c4-3d6d-4760-ac6a-69a6bebae6c5.tmp",
+    "docs/assets/screenshots/Day_07/Day07_Final_Test_Log - Copy.png",
+    "docs/assets/screenshots/Day_07/Object_Behaviour_Variants - Copy.png",
+    "Daily Logs/Completed/Day_07_Draft.md",
+    "docs/logs/Day_07_Draft.md",
+    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/aa7a1f77-539e-4459-8522-609b35516be0.tmp",
+    "docs/assets/screenshots/Day_07/Day07_Final_Test_Log.png",
+    "docs/assets/screenshots/Day_07/Object_Behaviour_Variants.png",
+    "docs/assets/screenshots/Day_07/Obje2s.png",
+    "docs/assets/screenshots/Day_07/1111.png",
+    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/f4672524-8614-4d8b-ac45-0c34da08cda0.tmp",
+    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/f8c60a30-71f9-4507-bde7-1b0c3c7b1441.tmp",
+    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/b549c4ce-7963-4b9e-b133-df312ba36c8b.tmp",
+    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/cd18e3b2-8dc6-4bc7-8c50-5908454d92c8.tmp",
+    "docs/assets/screenshots/Day_07/Destruction_State_System.png",
+    "docs/assets/screenshots/Day_07/Configurable_Component_Values.png",
+    "Screenshots/Day_07/Destruction_State_System.png",
+    "Screenshots/Day_07/Object_Behaviour_Variants.png",
+    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/89197977-bed3-46a9-93b2-b63219c275fc.tmp",
+    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/94c91b6d-d934-4fe1-be8c-8d2563d35bd1.tmp",
+    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/94f2a9cf-bb2f-4466-bfab-dded9a8d87f0.tmp",
+    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/474699c6-d00f-4bde-aa5e-6bd64003ba24.tmp",
+    "Worksheets/Drafts/Day_07_Worksheet.md",
+    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/c10d14b4-2df6-4468-a653-b3257d4734f9.tmp",
+    "Screenshots/Untitled/Untitled.md",
+    "Screenshots/Untitled.md",
     "Worksheets/Drafts/Day_06_Worksheet.md",
-    "docs/assets/screenshots/Day_06/Day06_Framework_Review.png",
-    "docs/assets/screenshots/Day_06/Destruction_Response_Function.png",
-    "docs/assets/screenshots/Day_06/Geometry_Response_Test.png",
-    "docs/assets/screenshots/Day_06/Framework_Controlled_Destruction.png",
-    "Screenshots/Day_06/Day06_Framework_Review.png",
-    "Screenshots/Day_06/Destruction_Response_Function.png",
-    "Screenshots/Day_06/Geometry_Response_Test.png",
-    "Screenshots/Day_06/Framework_Controlled_Destruction.png",
     "Daily Logs/Daily Logs.md",
+    "docs/logs/Day_06_Draft.md",
+    "Daily Logs/Completed/Day_06_Draft.md",
     "docs/logs/Day_05_Draft.md",
     "Worksheets/Drafts/Day_05_Worksheet.md",
     "Daily Logs/Completed/Day_05_Draft.md",
-    "docs/assets/screenshots/Day_05/Geometry_Trigger_Test.png",
-    "docs/assets/screenshots/Day_05/Framework_Validation.png",
     "Daily Logs/Completed/Day_04_Draft.md",
     "Worksheets/Drafts/Day_04_Worksheet.md",
     "docs/logs/Day_04_Draft.md",
@@ -245,11 +250,6 @@
     "docs/worksheets/Day_01_Worksheet.md",
     "Daily Logs/Completed/Day_03_Draft.md",
     "docs/logs/Day_01_Draft.md",
-    "docs/worksheets/Day_02_Worksheet.md",
-    "Daily Logs/Completed/Day_01_Draft.md",
-    "Architecture/Destruction Framework Notes.md",
-    "Thesis Notes/Untitled.md",
-    "Architecture/Day_03_First_Destruction_Prototype.md",
-    "Worksheets/Drafts/Day_01_Worksheet.md"
+    "docs/worksheets/Day_02_Worksheet.md"
   ]
 }

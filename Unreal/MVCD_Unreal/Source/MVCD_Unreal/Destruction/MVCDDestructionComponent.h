@@ -3,6 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "MVCDDestructionSettings.h"
+#include "MVCDDestructionState.h"
 #include "MVCDDestructionEvent.h"
 #include "Components/ActorComponent.h"
 #include "MVCDDestructionComponent.generated.h"
@@ -14,8 +16,7 @@ class MVCD_UNREAL_API UMVCDDestructionComponent : public UActorComponent
 {
 	GENERATED_BODY()
 
-public:	
-	// Sets default values for this component's properties
+public:
 	UMVCDDestructionComponent();
 
 	UFUNCTION(BlueprintCallable, Category = "MVCD|Destruction")
@@ -30,28 +31,27 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "MVCD|Destruction")
 	void TriggerDestructionResponse(const FMVCDDestructionEvent& DestructionEvent);
 
+	UFUNCTION(BlueprintCallable, Category = "MVCD|Destruction")
+	void UpdateDestructionState();
+
 protected:
-	// Called when the game starts
 	virtual void BeginPlay() override;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "MVCD|Destruction")
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "MVCD|Destruction")
 	float CurrentIntegrity = 100.0f;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "MVCD|Destruction")
+	EMVCDDestructionState CurrentState = EMVCDDestructionState::Healthy;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "MVCD|Destruction")
-	float DestructionThreshold = 0.0f;
+	FMVCDDestructionSettings Settings;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "MVCD|Destruction")
 	UGeometryCollectionComponent* GeometryCollectionComponent = nullptr;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "MVCD|Destruction")
-	float DestructionImpulseStrength = 250000.0f;
-
 	UFUNCTION(BlueprintCallable, Category = "MVCD|Destruction")
 	void CacheGeometryCollectionComponent();
 
-public:	
-	// Called every frame
+public:
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
-
-		
 };

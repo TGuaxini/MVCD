@@ -138,5 +138,31 @@
         "caption": "Geometry Response Test"
       }
     ]
+  },
+  "Day_07": {
+    "title": "Day 07 Evidence",
+    "description": "Evidence screenshots for Day 07.",
+    "images": [
+      {
+        "file": "./assets/screenshots/Day_07/Configurable_Component_Values.png",
+        "caption": "Configurable Component Values"
+      },
+      {
+        "file": "./assets/screenshots/Day_07/Day07_Final_Test_Log - Copy.png",
+        "caption": "Day07 Final Test Log   Copy"
+      },
+      {
+        "file": "./assets/screenshots/Day_07/Destruction_State_System.png",
+        "caption": "Destruction State System"
+      },
+      {
+        "file": "./assets/screenshots/Day_07/Object_Behaviour_Variants - Copy.png",
+        "caption": "Object Behaviour Variants   Copy"
+      },
+      {
+        "file": "./assets/screenshots/Day_07/Object_Behaviour_Variants.png",
+        "caption": "Object Behaviour Variants"
+      }
+    ]
   }
 }

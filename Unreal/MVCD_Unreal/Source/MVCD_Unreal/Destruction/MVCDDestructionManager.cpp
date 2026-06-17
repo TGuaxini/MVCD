@@ -1,5 +1,6 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
+#include "TimerManager.h"
 #include "EngineUtils.h"
 #include "Destruction/MVCDDestructionManager.h"
 
@@ -28,7 +29,7 @@ void AMVCDDestructionManager::BeginPlay()
 		}
 	}
 
-	RunTestDestructionEvent();
+	GetWorldTimerManager().SetTimerForNextTick(this, &AMVCDDestructionManager::RunTestDestructionEvent);
 }
 
 // Called every frame
@@ -49,8 +50,6 @@ void AMVCDDestructionManager::RegisterDestructibleActor(AActor* DestructibleActo
 	{
 		RegisteredDestructibleActors.Add(DestructibleActor);
 
-		UE_LOG(LogTemp, Warning, TEXT("MVCD Destruction Manager: Registered actor %s"),
-			*DestructibleActor->GetName());
 	}
 }
 
@@ -98,23 +97,24 @@ void AMVCDDestructionManager::RunTestDestructionEvent()
 		return;
 	}
 
-	AActor* TargetActor = RegisteredDestructibleActors[0];
-
-	if (!IsValid(TargetActor))
+	for (AActor* TargetActor : RegisteredDestructibleActors)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("MVCD Destruction Manager: Invalid target actor for test event."));
-		return;
+		if (!IsValid(TargetActor))
+		{
+			UE_LOG(LogTemp, Warning, TEXT("MVCD Destruction Manager: Invalid target actor for test event."));
+			continue;
+		}
+
+		FMVCDDestructionEvent TestEvent;
+		TestEvent.DamageAmount = 150.0f;
+		TestEvent.TargetActor = TargetActor;
+		TestEvent.SourceActor = this;
+		TestEvent.ImpactLocation = TargetActor->GetActorLocation();
+		TestEvent.ImpactDirection = FVector::DownVector;
+
+		UE_LOG(LogTemp, Warning, TEXT("MVCD Destruction Manager: Running test destruction event on %s"),
+			*TargetActor->GetName());
+
+		ProcessDestructionEvent(TestEvent);
 	}
-
-	FMVCDDestructionEvent TestEvent;
-	TestEvent.DamageAmount = 150.0f;
-	TestEvent.TargetActor = TargetActor;
-	TestEvent.SourceActor = this;
-	TestEvent.ImpactLocation = TargetActor->GetActorLocation();
-	TestEvent.ImpactDirection = FVector::DownVector;
-
-	UE_LOG(LogTemp, Warning, TEXT("MVCD Destruction Manager: Running test destruction event on %s"),
-		*TargetActor->GetName());
-
-	ProcessDestructionEvent(TestEvent);
 }
