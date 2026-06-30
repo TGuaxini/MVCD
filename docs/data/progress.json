@@ -95,6 +95,15 @@
     "summary": "Extended the destruction reaction system with visible state-driven feedback by assigning different materials for Damaged, Critical, and Destroyed states through the reaction component.",
     "log": "./viewer.html?file=logs/Day_10_Draft.md&type=Daily%20Log",
     "evidence": "./gallery.html?day=Day_10"
+    },
+    {
+    "title": "Day 11 - Destruction Metrics and Analytics System",
+    "date": "2026-06-17",
+    "hours": "12h",
+    "completion": "Completed",
+    "summary": "Implemented a framework-wide analytics system capable of collecting destruction metrics, tracking state transitions, generating benchmark statistics and reporting runtime destruction results for evaluation.",
+    "log": "./viewer.html?file=logs/Day_11_Draft.md&type=Daily%20Log",
+    "evidence": "./gallery.html?day=Day_11"
     }
   ]
 }
