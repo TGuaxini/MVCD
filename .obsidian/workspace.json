@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily Logs/Drafts/Day_11_Draft.md",
+                "file": "Daily Logs/Completed/Day_10_Draft.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day_11_Draft"
+              "title": "Day_10_Draft"
             }
           }
         ]
@@ -33,12 +33,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Worksheets/Drafts/Day_11_Worksheet.md",
+                "file": "docs/logs/Day_11_Draft.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day_11_Worksheet"
+              "title": "Day_11_Draft"
             }
           }
         ]
@@ -203,41 +203,44 @@
       "bases:Create new base": false
     }
   },
-  "active": "f9dcbf232db869e9",
+  "active": "8690d374ea48cece",
   "lastOpenFiles": [
-    "Unreal/MVCD_Unreal/Saved/Crashes/UECC-Windows-06733A364D5A4F4E74AF59AE01E98427_0001/UEMinidump.dmp",
-    "Unreal/MVCD_Unreal/Saved/Crashes/UECC-Windows-06733A364D5A4F4E74AF59AE01E98427_0001/CrashReportClient.ini",
-    "Unreal/MVCD_Unreal/Saved/Crashes/UECC-Windows-06733A364D5A4F4E74AF59AE01E98427_0001/MVCD_Unreal.log",
-    "Unreal/MVCD_Unreal/Saved/Crashes/UECC-Windows-06733A364D5A4F4E74AF59AE01E98427_0001",
-    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettingsFAC25D2B4DB152CBD9AAF6ACB6C7DAAE.tmp",
-    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettingsFD1B0B4B485F451E58CB36BC2F85877B.tmp",
-    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettingsF805AF8442014C683D5F6FB7256D1076.tmp",
-    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettingsD2A4A02C4F3772EC662FF4BE9EFE6A67.tmp",
-    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettings782B7BA84C6B0996FF8217AE2EAE1F2D.tmp",
-    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettingsB4E684AA4162CED59CBCF5A1330014A6.tmp",
-    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettings21EECEC54B11744A5B439D95439E4C68.tmp",
-    "Worksheets/Drafts/Day_09_Worksheet.md",
-    "Worksheets/Drafts/Day_11_Worksheet.md",
-    "Daily Logs/Drafts/Day_11_Draft.md",
+    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/643c3438-47ac-4094-a752-9b1af79d19a7.tmp",
+    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/523033c4-0bec-4125-b356-8ca77de85297.tmp",
+    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/ee4f7e28-c1be-4493-8df3-5d915ec32678.tmp",
+    "Daily Logs/Completed/Day_11_Draft.md",
+    "docs/logs/Day_11_Draft.md",
+    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettings0574E5B14250EA25F16D938C54B18B21.tmp",
+    "Screenshots/Day_11/Benchmark_Report.png",
+    "Screenshots/Day_11/Metrics_Architecture.png",
+    "docs/assets/screenshots/Day_11/Benchmark_Report.png",
+    "docs/assets/screenshots/Day_11/Metrics_Architecture.png",
+    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/01684552-b2c5-4a00-869e-4d0982435f9d.tmp",
+    "Screenshots/Day_11/Event_Collection_Test.png",
+    "Screenshots/Day_11/Analytics_Validation.png",
+    "docs/assets/screenshots/Day_11/Event_Collection_Test.png",
+    "docs/assets/screenshots/Day_11/Analytics_Validation.png",
+    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/06609669-c1cd-4fc6-b5be-5f8cb86204e7.tmp",
+    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettings387440AE49C62DF9E10D858DF7A73AD9.tmp",
+    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/92838d9b-744b-4f1e-83e1-eb39cdc3c9d9.tmp",
+    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/5a7e7171-c53f-4969-887d-201c3c97f941.tmp",
+    "Unreal/MVCD_Unreal/Saved/webcache_6613/Default/Network/7729f223-ffac-4bbe-9eee-743cfd0ffde5.tmp",
+    "Unreal/MVCD_Unreal/Intermediate/Build/Win64/x64/UnrealEditor/Development/MVCD_Unreal/Module.MVCD_Unreal.cpp.lc.obj",
+    "docs/logs/Day_10_Draft.md",
+    "docs/logs/Day_09_Draft.md",
+    "Daily Logs/Completed/Day_09_Draft.md",
+    "Daily Logs/Completed/Day_10_Draft.md",
     "Worksheets/Drafts/Day_10_Worksheet.md",
-    "Daily Logs/Drafts/Day_10_Draft.md",
-    "Daily Logs/Drafts/Day_09_Draft.md",
+    "Worksheets/Drafts/Day_09_Worksheet.md",
+    "docs/assets/screenshots/Day_10/Damage_State_Response.png",
+    "docs/assets/screenshots/Day_10/Destroyed_State_Response.png",
+    "Worksheets/Drafts/Day_11_Worksheet.md",
     "Daily Logs/Completed/Day_08_Draft.md",
     "docs/logs/Day_08_Draft.md",
-    "Screenshots/Day_08/Delegate_Broadcast_Test.png",
-    "Screenshots/Day_08/Blueprint_Delegate_Validation.png",
-    "Screenshots/Day_08/Day08_Framework_Review.png",
-    "Screenshots/Day_08/State_Change_Delegate.png",
-    "docs/assets/screenshots/Day_08/Delegate_Broadcast_Test.png",
-    "docs/assets/screenshots/Day_08/Blueprint_Delegate_Validation.png",
-    "docs/assets/screenshots/Day_08/Day08_Framework_Review.png",
-    "docs/assets/screenshots/Day_08/State_Change_Delegate.png",
     "Worksheets/Drafts/Day_08_Worksheet.md",
     "Benchmarks/Benchmarks.md",
     "Worksheets/Drafts/Day_07_Worksheet.md",
     "docs/logs/Day_07_Draft.md",
-    "docs/assets/screenshots/Day_07/Day07_Final_Test_Log - Copy.png",
-    "docs/assets/screenshots/Day_07/Object_Behaviour_Variants - Copy.png",
     "Daily Logs/Completed/Day_07_Draft.md",
     "Screenshots/Untitled/Untitled.md",
     "Screenshots/Untitled.md",
@@ -247,9 +250,6 @@
     "Daily Logs/Completed/Day_06_Draft.md",
     "docs/logs/Day_05_Draft.md",
     "Worksheets/Drafts/Day_05_Worksheet.md",
-    "Daily Logs/Completed/Day_05_Draft.md",
-    "Daily Logs/Completed/Day_04_Draft.md",
-    "Worksheets/Drafts/Day_04_Worksheet.md",
-    "docs/logs/Day_04_Draft.md"
+    "Daily Logs/Completed/Day_05_Draft.md"
   ]
 }

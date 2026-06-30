@@ -77,6 +77,24 @@
     "summary": "Implemented destruction state change delegates, Blueprint event notifications, and event-driven framework communication. Added multicast delegate broadcasting for destruction state transitions and validated Blueprint integration across multiple destruction object variants.",
     "log": "./viewer.html?file=logs/Day_08_Draft.md&type=Daily%20Log",
     "evidence": "./gallery.html?day=Day_08"
+    },
+    {
+    "title": "Day 09 - Destruction Reaction System",
+    "date": "2026-06-17",
+    "hours": "4h",
+    "completion": "Completed",
+    "summary": "Implemented a dedicated destruction reaction component that subscribes to destruction state change delegates and triggers state-specific responses for Damaged, Critical, and Destroyed states.",
+    "log": "./viewer.html?file=logs/Day_09_Draft.md&type=Daily%20Log",
+    "evidence": "./gallery.html?day=Day_09"
+    },
+    {
+    "title": "Day 10 - Visual Destruction Feedback System",
+    "date": "2026-06-17",
+    "hours": "4h",
+    "completion": "Completed",
+    "summary": "Extended the destruction reaction system with visible state-driven feedback by assigning different materials for Damaged, Critical, and Destroyed states through the reaction component.",
+    "log": "./viewer.html?file=logs/Day_10_Draft.md&type=Daily%20Log",
+    "evidence": "./gallery.html?day=Day_10"
     }
   ]
 }

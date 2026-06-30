@@ -30,6 +30,9 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "MVCD|Destruction|Testing")
 	void RunTestDestructionEvent();
 
+	UFUNCTION(BlueprintCallable, Category = "MVCD|Metrics")
+	void PrintMetricsReport() const;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

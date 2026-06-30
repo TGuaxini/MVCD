@@ -148,6 +148,8 @@ void AMVCDDestructionManager::RunTestDestructionEvent()
 
 		ProcessDestructionEvent(TestEvent);
 	}
+
+	PrintMetricsReport();
 }
 
 void AMVCDDestructionManager::RegisterDamageEvent()
@@ -173,4 +175,16 @@ void AMVCDDestructionManager::RegisterDamagedObject()
 void AMVCDDestructionManager::RegisterCriticalObject()
 {
 	Metrics.TotalCriticalObjects++;
+}
+void AMVCDDestructionManager::PrintMetricsReport() const
+{
+	UE_LOG(LogTemp, Warning, TEXT("========== MVCD METRICS REPORT =========="));
+
+	UE_LOG(LogTemp, Warning, TEXT("Total Damage Events: %d"), Metrics.TotalDamageEvents);
+	UE_LOG(LogTemp, Warning, TEXT("Total State Changes: %d"), Metrics.TotalStateChanges);
+	UE_LOG(LogTemp, Warning, TEXT("Destroyed Objects: %d"), Metrics.TotalDestroyedObjects);
+	UE_LOG(LogTemp, Warning, TEXT("Damaged Objects: %d"), Metrics.TotalDamagedObjects);
+	UE_LOG(LogTemp, Warning, TEXT("Critical Objects: %d"), Metrics.TotalCriticalObjects);
+
+	UE_LOG(LogTemp, Warning, TEXT("========================================="));
 }
