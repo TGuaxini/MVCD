@@ -1,5 +1,6 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
+#include "Net/UnrealNetwork.h"
 #include "Destruction/MVCDDestructionComponent.h"
 #include "GeometryCollection/GeometryCollectionComponent.h"
 
@@ -9,6 +10,7 @@ UMVCDDestructionComponent::UMVCDDestructionComponent()
 	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
 	// off to improve performance if you don't need them.
 	PrimaryComponentTick.bCanEverTick = true;
+	SetIsReplicatedByDefault(true);
 
 	// ...
 }
@@ -36,6 +38,12 @@ void UMVCDDestructionComponent::TickComponent(float DeltaTime, ELevelTick TickTy
 
 void UMVCDDestructionComponent::ApplyDamage(const FMVCDDestructionEvent& DestructionEvent)
 {
+	if (GetOwner() && !GetOwner()->HasAuthority())
+	{
+		UE_LOG(LogTemp, Warning,
+			TEXT("MVCD Destruction Component: Ignored damage on non-authority instance"));
+		return;
+	}
 	if (!IsValid(GeometryCollectionComponent))
 	{
 		CacheGeometryCollectionComponent();
@@ -155,7 +163,35 @@ void UMVCDDestructionComponent::UpdateDestructionState()
 			static_cast<int32>(CurrentState));
 	}
 }
+
 EMVCDDestructionState UMVCDDestructionComponent::GetCurrentState() const
 {
 	return CurrentState;
+}
+
+void UMVCDDestructionComponent::ServerApplyDamage_Implementation(const FMVCDDestructionEvent& DestructionEvent)
+{
+	ApplyDamage(DestructionEvent);
+}
+
+void UMVCDDestructionComponent::OnRep_CurrentIntegrity()
+{
+	UE_LOG(LogTemp, Warning,
+		TEXT("MVCD Replication: CurrentIntegrity replicated | %.2f"),
+		CurrentIntegrity);
+}
+
+void UMVCDDestructionComponent::OnRep_CurrentState()
+{
+	UE_LOG(LogTemp, Warning,
+		TEXT("MVCD Replication: CurrentState replicated | State: %d"),
+		static_cast<int32>(CurrentState));
+}
+
+void UMVCDDestructionComponent::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
+{
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+
+	DOREPLIFETIME(UMVCDDestructionComponent, CurrentIntegrity);
+	DOREPLIFETIME(UMVCDDestructionComponent, CurrentState);
 }

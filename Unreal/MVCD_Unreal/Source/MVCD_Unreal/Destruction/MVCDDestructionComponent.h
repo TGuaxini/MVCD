@@ -42,13 +42,19 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "MVCD|Destruction")
 	EMVCDDestructionState GetCurrentState() const;
 
+	UFUNCTION(Server, Reliable, BlueprintCallable, Category = "MVCD|Networking")
+	void ServerApplyDamage(const FMVCDDestructionEvent& DestructionEvent);
+
+
+	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
+
 protected:
 	virtual void BeginPlay() override;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "MVCD|Destruction")
+	UPROPERTY(ReplicatedUsing = OnRep_CurrentIntegrity, VisibleAnywhere, BlueprintReadOnly, Category = "MVCD|Destruction")
 	float CurrentIntegrity = 100.0f;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "MVCD|Destruction")
+	UPROPERTY(ReplicatedUsing = OnRep_CurrentState, VisibleAnywhere, BlueprintReadOnly, Category = "MVCD|Destruction")
 	EMVCDDestructionState CurrentState = EMVCDDestructionState::Healthy;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "MVCD|Destruction")
@@ -60,6 +66,11 @@ protected:
 	UFUNCTION(BlueprintCallable, Category = "MVCD|Destruction")
 	void CacheGeometryCollectionComponent();
 
+	UFUNCTION()
+	void OnRep_CurrentIntegrity();
+
+	UFUNCTION()
+	void OnRep_CurrentState();
 public:
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 };

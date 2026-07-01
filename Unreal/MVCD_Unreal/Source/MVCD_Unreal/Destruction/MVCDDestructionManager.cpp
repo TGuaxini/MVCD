@@ -29,7 +29,7 @@ void AMVCDDestructionManager::BeginPlay()
 		}
 	}
 
-	GetWorldTimerManager().SetTimerForNextTick(this, &AMVCDDestructionManager::RunTestDestructionEvent);
+	GetWorldTimerManager().SetTimerForNextTick(this, &AMVCDDestructionManager::RunBenchmark);
 }
 
 // Called every frame
@@ -137,7 +137,7 @@ void AMVCDDestructionManager::RunTestDestructionEvent()
 		}
 
 		FMVCDDestructionEvent TestEvent;
-		TestEvent.DamageAmount = 150.0f;
+		TestEvent.DamageAmount = BenchmarkConfig.DamageAmount;
 		TestEvent.TargetActor = TargetActor;
 		TestEvent.SourceActor = this;
 		TestEvent.ImpactLocation = TargetActor->GetActorLocation();
@@ -148,8 +148,6 @@ void AMVCDDestructionManager::RunTestDestructionEvent()
 
 		ProcessDestructionEvent(TestEvent);
 	}
-
-	PrintMetricsReport();
 }
 
 void AMVCDDestructionManager::RegisterDamageEvent()
@@ -187,4 +185,78 @@ void AMVCDDestructionManager::PrintMetricsReport() const
 	UE_LOG(LogTemp, Warning, TEXT("Critical Objects: %d"), Metrics.TotalCriticalObjects);
 
 	UE_LOG(LogTemp, Warning, TEXT("========================================="));
+}
+void AMVCDDestructionManager::ResetMetrics()
+{
+	Metrics = FMVCDDestructionMetrics();
+}
+void AMVCDDestructionManager::RunBenchmark()
+{
+	if (BenchmarkConfig.bResetMetricsBeforeRun)
+	{
+		ResetMetrics();
+	}
+
+	CurrentBenchmarkIndex = 0;
+
+	if (BenchmarkConfig.DelayBetweenTests <= 0.0f)
+	{
+		RunTestDestructionEvent();
+
+		if (BenchmarkConfig.bPrintResultsAtEnd)
+		{
+			PrintMetricsReport();
+		}
+
+		return;
+	}
+
+	RunBenchmarkStep();
+}
+void AMVCDDestructionManager::RunBenchmarkStep()
+{
+	if (!RegisteredDestructibleActors.IsValidIndex(CurrentBenchmarkIndex))
+	{
+		if (BenchmarkConfig.bPrintResultsAtEnd)
+		{
+			PrintMetricsReport();
+		}
+
+		return;
+	}
+
+	AActor* TargetActor = RegisteredDestructibleActors[CurrentBenchmarkIndex];
+
+	if (IsValid(TargetActor))
+	{
+		FMVCDDestructionEvent TestEvent;
+		TestEvent.DamageAmount = BenchmarkConfig.DamageAmount;
+		TestEvent.TargetActor = TargetActor;
+		TestEvent.SourceActor = this;
+		TestEvent.ImpactLocation = TargetActor->GetActorLocation();
+		TestEvent.ImpactDirection = FVector::DownVector;
+
+		UE_LOG(LogTemp, Warning,
+			TEXT("MVCD Benchmark Step %d/%d on %s"),
+			CurrentBenchmarkIndex + 1,
+			RegisteredDestructibleActors.Num(),
+			*TargetActor->GetName());
+
+		ProcessDestructionEvent(TestEvent);
+	}
+
+	CurrentBenchmarkIndex++;
+
+	GetWorldTimerManager().SetTimerForNextTick([this]()
+		{
+			FTimerHandle TimerHandle;
+
+			GetWorldTimerManager().SetTimer(
+				TimerHandle,
+				this,
+				&AMVCDDestructionManager::RunBenchmarkStep,
+				BenchmarkConfig.DelayBetweenTests,
+				false
+			);
+		});
 }

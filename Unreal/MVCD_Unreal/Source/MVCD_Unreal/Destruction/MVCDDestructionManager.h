@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Destruction/MVCDBenchmarkConfig.h"
 #include "MVCDDestructionEvent.h"
 #include "MVCDDestructionComponent.h"
 #include "Destruction/MVCDDestructionMetrics.h"
@@ -30,8 +31,20 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "MVCD|Destruction|Testing")
 	void RunTestDestructionEvent();
 
+	UFUNCTION(BlueprintCallable, Category = "MVCD|Benchmark")
+	void RunBenchmark();
+
+	UFUNCTION(BlueprintCallable, Category = "MVCD|Metrics")
+	void ResetMetrics();
+
 	UFUNCTION(BlueprintCallable, Category = "MVCD|Metrics")
 	void PrintMetricsReport() const;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "MVCD|Benchmark")
+	FMVCDBenchmarkConfig BenchmarkConfig;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "MVCD|Benchmark")
+	int32 CurrentBenchmarkIndex = 0;
 
 protected:
 	// Called when the game starts or when spawned
@@ -52,5 +65,6 @@ public:
 	void RegisterDestroyedObject();
 	void RegisterDamagedObject();
 	void RegisterCriticalObject();
+	void RunBenchmarkStep();
 
 };

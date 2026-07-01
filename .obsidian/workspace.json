@@ -33,12 +33,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/logs/Day_11_Draft.md",
+                "file": "Architecture/Day 04 - Material Resistance Concept.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day_11_Draft"
+              "title": "Day 04 - Material Resistance Concept"
             }
           }
         ]
@@ -203,21 +203,27 @@
       "bases:Create new base": false
     }
   },
-  "active": "8690d374ea48cece",
+  "active": "77784c91b6ce9d9d",
   "lastOpenFiles": [
-    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettings4C7DD4E74C4CEDFBA06E45870BFF0958.tmp",
-    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettings5C2400A54466D9EEA0361289CF221918.tmp",
-    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettings9691EC4C4BAFFED86DC6B9B956BA9B33.tmp",
-    "Unreal/MVCD_Unreal/Saved/webcache_6613/e65785fc-2da7-4676-b09b-3fe640836306.tmp",
-    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettings508812F84AE9B1A789504583B37EC583.tmp",
-    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettingsC31AFC9747CD4ED3ACD8DF912ABE9D9A.tmp",
-    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettings58A95DDA462BFF91C8D39196C575F0B9.tmp",
-    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettings87925E55442644D33B89448E10899CCC.tmp",
-    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettings1B1414564DE8BBB4E85A2B8F44AF89DC.tmp",
-    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettings51EA26224B462EBCBEED6DA9ED1B9ACF.tmp",
-    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettings79D2D66047FE00A3186141871901351A.tmp",
-    "Daily Logs/Completed/Day_11_Draft.md",
+    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettings30CB338746B380DA10E1799A0A80CAB8.tmp",
+    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettings2BC71ECA45291014C617B28C9B101867.tmp",
+    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettingsC430117C490076D78FE8CAA40C342668.tmp",
+    "Unreal/MVCD_Unreal/Saved/webcache_6613/1c46c28d-e720-4ebf-9b62-1731a38bb8b3.tmp",
+    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettings90FC3665434A3B80C9D5D1937A98DC7E.tmp",
+    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettings45F18AC2463D3488C6ADC098A9C56EDE.tmp",
+    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettings96F7BB16431B3597B2466E86FAFE4B5B.tmp",
+    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettingsA77523164CC3CE9F31BE559080556C2A.tmp",
+    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettings1A6CEC234053DFE30A51D4A76FA11428.tmp",
+    "Unreal/MVCD_Unreal/Saved/EditorPerProjectUserSettings1F32016C413669C7D7AF199D98B9674A.tmp",
+    "Unreal/MVCD_Unreal/Saved/Config/WindowsEditor/EditorPerProjectUserSettings.ini",
+    "Architecture/Day_03_First_Destruction_Prototype.md",
+    "Architecture/Destruction Framework Notes.md",
+    "Architecture/MVCD_Framework_Architecture_Initial.md",
+    "Architecture/Website Improvements Roadmap.md",
+    "Monster Versus City Destruction (MVCD).md",
+    "docs_PUBLISHING_GUIDE.md",
     "docs/logs/Day_11_Draft.md",
+    "Daily Logs/Completed/Day_11_Draft.md",
     "Screenshots/Day_11/Benchmark_Report.png",
     "Screenshots/Day_11/Metrics_Architecture.png",
     "docs/assets/screenshots/Day_11/Benchmark_Report.png",
@@ -244,12 +250,6 @@
     "Daily Logs/Completed/Day_07_Draft.md",
     "Screenshots/Untitled/Untitled.md",
     "Screenshots/Untitled.md",
-    "Worksheets/Drafts/Day_06_Worksheet.md",
-    "Daily Logs/Daily Logs.md",
-    "docs/logs/Day_06_Draft.md",
-    "Daily Logs/Completed/Day_06_Draft.md",
-    "docs/logs/Day_05_Draft.md",
-    "Worksheets/Drafts/Day_05_Worksheet.md",
-    "Daily Logs/Completed/Day_05_Draft.md"
+    "Worksheets/Drafts/Day_06_Worksheet.md"
   ]
 }
