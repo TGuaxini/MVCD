@@ -17,19 +17,16 @@ void AMVCDDestructionManager::BeginPlay()
 {
 	Super::BeginPlay();
 
-	UE_LOG(LogTemp, Warning, TEXT("MVCD Destruction Manager: BeginPlay"));
-
-	for (TActorIterator<AActor> ActorItr(GetWorld()); ActorItr; ++ActorItr)
+	if (!HasAuthority())
 	{
-		AActor* Actor = *ActorItr;
-
-		if (Actor->ActorHasTag("Destructible"))
-		{
-			RegisterDestructibleActor(Actor);
-		}
+		UE_LOG(LogTemp, Warning,
+			TEXT("MVCD Destruction Manager: Benchmark disabled on non-authority instance"));
+		return;
 	}
 
-	GetWorldTimerManager().SetTimerForNextTick(this, &AMVCDDestructionManager::RunBenchmark);
+	UE_LOG(LogTemp, Warning, TEXT("MVCD Destruction Manager: BeginPlay"));
+
+	// rest of your current code...
 }
 
 // Called every frame

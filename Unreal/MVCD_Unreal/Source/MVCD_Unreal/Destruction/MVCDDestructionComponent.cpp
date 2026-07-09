@@ -184,8 +184,15 @@ void UMVCDDestructionComponent::OnRep_CurrentIntegrity()
 void UMVCDDestructionComponent::OnRep_CurrentState()
 {
 	UE_LOG(LogTemp, Warning,
-		TEXT("MVCD Replication: CurrentState replicated | State: %d"),
+		TEXT("MVCD Replication: CurrentState replicated | Previous: %d | New: %d"),
+		static_cast<int32>(PreviousReplicatedState),
 		static_cast<int32>(CurrentState));
+
+	if (PreviousReplicatedState != CurrentState)
+	{
+		OnStateChanged.Broadcast(PreviousReplicatedState, CurrentState);
+		PreviousReplicatedState = CurrentState;
+	}
 }
 
 void UMVCDDestructionComponent::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const

@@ -24,6 +24,9 @@ public:
 	UPROPERTY(BlueprintAssignable, Category = "MVCD|Destruction")
 	FMVCDOnStateChanged OnStateChanged;
 
+	UPROPERTY()
+	EMVCDDestructionState PreviousReplicatedState = EMVCDDestructionState::Healthy;
+
 	UFUNCTION(BlueprintCallable, Category = "MVCD|Destruction")
 	void ApplyDamage(const FMVCDDestructionEvent& DestructionEvent);
 
